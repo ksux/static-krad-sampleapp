@@ -17,5 +17,5 @@ In IntelliJ, from the main menubar, go to `VCS > Apply Patch...`. Locate and app
 Start KRAD Sample App. Then run the following shell script.
 
 ```
-bash bin/static-krad-sampleapp.sh
+npm run mirror
 ```

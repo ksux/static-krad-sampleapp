@@ -1,0 +1,18 @@
+{
+  "name": "static-krad-sampleapp",
+  "version": "0.0.0",
+  "description": "Generate a static mirror of the KRAD Sample App.",
+  "scripts": {
+    "mirror": "bash bin/static-krad-sampleapp.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ksux/static-krad-sampleapp.git"
+  },
+  "author": "Chris Basham <csbasham@iu.edu>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksux/static-krad-sampleapp/issues"
+  },
+  "homepage": "https://github.com/ksux/static-krad-sampleapp"
+}

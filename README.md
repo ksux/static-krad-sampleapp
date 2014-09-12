@@ -1,6 +1,6 @@
 # Static KRAD Sample App
 
-Create a static mirror of the KRAD Sample App.
+Generate a static mirror of the KRAD Sample App.
 
 ## Instructions
 

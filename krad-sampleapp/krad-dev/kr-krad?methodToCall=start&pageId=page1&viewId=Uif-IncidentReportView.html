@@ -1,0 +1,345 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>
+Kuali :: Incident Report
+</title>
+<link href="themes/kboot/stylesheets/kboot.2.5.0-M7-SNAPSHOT.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/kradSampleApp.css" rel="stylesheet" type="text/css"/>
+</head>
+<body id="Uif-Application" style="display:none;">
+<a href="kr-krad%3FmethodToCall=start&amp;pageId=page1&amp;viewId=Uif-IncidentReportView.html#mainContent" class="sr-only">Skip to main content</a>
+<!-- APPLICATION HEADER -->
+<header id="Uif-ApplicationHeader-Wrapper" >
+<div class="demo-appHeader">
+<div>
+<div class="demo-headerFooterContainer">
+<a href="kr-krad/kradsampleapp%3FviewId=KradSampleAppHome.html" class="demo-brand">
+<div class="demo-brandLogo">
+</div>
+</a>
+<div>
+<ul class="demo-appNavigation">
+<li><a id="Demo-HomeLink"
+href="kr-krad/kradsampleapp%3FviewId=KradSampleAppHome.html">Home</a>
+</li>
+<li><a id="Demo-LibraryLink"
+href="kr-krad/kradsampleapp%3FviewId=ComponentLibraryHome.html">Library</a>
+</li>
+<li><a id="Demo-DemoLink"
+href="kr-krad/kradsampleapp%3FviewId=KradSampleAppDemo.html">Demo</a></li>
+<li><a id="Demo-DownloadLink" href="http://kuali.org/download/rice">Download</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Backdoor info (here to inherit stickyness with the header, if set) -->
+</header>
+<!-- APPLICATION FORM/CONTENT - VIEW -->
+<form id="kualiForm" action="http://localhost:8080/krad-dev/incidentReport" method="post" accept-charset="UTF-8"
+>
+<!-- VIEW -->
+<div id="Uif-IncidentReportView" class="clearfix uif-formView uif-incidentReportView" data-role="View">
+<!-- BREADCRUMBS -->
+<div id="Uif-BreadcrumbWrapper" ></div>
+<!-- VIEW HEADER -->
+<header id="Uif-IncidentReportView_headerWrapper" class="container-fluid uif-viewHeader uif-header" data-header_for="Uif-IncidentReportView">
+<h1 id="Uif-IncidentReportView_header" class="uif-headerText">
+<span class="uif-headerText-span">
+Incident Report
+</span>
+</h1>
+</header>
+<!-- VIEW CONTENT -->
+<div id="Uif-ViewContentWrapper" class="uif-viewContentWrapper container-fluid">
+<!-- VIEW NAVIGATION -->
+<div id="Uif-BreadcrumbUpdate" style="display:none;">
+<ol class="uif-breadcrumbs" role="navigation">
+<li>
+<a id="utj7yy0" data-role="breadcrumb" href="kr-krad%3FmethodToCall=start&amp;pageId=page1&amp;viewId=Uif-IncidentReportView.html" >Incident Report</a>
+</li>
+</ol>
+<input name="script" type="hidden" data-role="script" value="setupBreadcrumbs(false);" />
+</div>
+<div id="Uif-ViewHeaderUpdate" style="display:none;">
+<header id="Uif-IncidentReportView_headerWrapper" class="container-fluid uif-viewHeader uif-header" data-header_for="Uif-IncidentReportView">
+<h1 id="Uif-IncidentReportView_header" class="uif-headerText">
+<span class="uif-headerText-span">
+Incident Report
+</span>
+</h1>
+</header>
+</div>
+<main id="page1" class="uif-page" data-server_messages="false" data-role="Page" data-parent="Uif-IncidentReportView" data-focusId="FIRST">
+<a id="mainContent"></a>
+<section id="Uif-IncidentDetailGroup" class="uif-gridSection uif-incidentDetailGroup uif-boxLayoutVerticalItem clearfix" data-parent="page1">
+<header id="Uif-IncidentDetailGroup_headerWrapper" class="uif-incidentDetailGroup-header" data-header_for="Uif-IncidentDetailGroup">
+<h3 id='Uif-IncidentDetailGroup_header' class="uif-headerText">
+<span class="uif-headerText-span">
+Incident Feedback
+</span>
+</h3>
+</header>
+<p id="Uif-IncidentDetailGroup_instructional" class="uif-instructionalMessage" >
+This information will be forwarded to our support team. Please describe what action you were taking when the problem occurred </p>
+<table id="u15h61m0" class="table table-condensed table-bordered uif-gridLayout uif-table-fixed" role="presentation">
+<tr >
+<th scope="row"
+>
+<label id="uk9itqu_label" for="uk9itqu_control" class="uif-label displayWith-uk9itqu uif-labelBlock" data-label_for="uk9itqu"> Document Id: </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="uk9itqu" class="uif-inputField" data-role="InputField" data-label="Document Id">
+<span id="uk9itqu_control" tabindex="0">
+</span>
+</div>
+</td>
+</tr>
+<tr >
+<th scope="row"
+>
+<label id="uk9itrp_label" for="uk9itrp_control" class="uif-label displayWith-uk9itrp uif-labelBlock" data-label_for="uk9itrp"> View Id: </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="uk9itrp" class="uif-inputField" data-role="InputField" data-label="View Id">
+<span id="uk9itrp_control" tabindex="0">
+</span>
+</div>
+</td>
+</tr>
+<tr >
+<th scope="row"
+>
+<label id="uk9itsk_label" for="uk9itsk_control" class="uif-label displayWith-uk9itsk uif-labelBlock" data-label_for="uk9itsk"> Error Message: </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="uk9itsk" class="uif-inputField" style="color : RED;" data-role="InputField" data-label="Error Message">
+<span id="uk9itsk_control" tabindex="0">
+The system has encountered an error and is unable to complete your request at this time. Please provide more information regarding this error by completing this Incident Report.
+</span>
+</div>
+</td>
+</tr>
+<tr >
+<th scope="row"
+>
+<label id="uk9ittf_label" for="uk9ittf_control" class="uif-label displayWith-uk9ittf uif-labelBlock" data-label_for="uk9ittf"> User Feedback: </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="uk9ittf" class="uif-inputField" data-parent="Uif-IncidentDetailGroup" data-role="InputField" data-label="User Feedback">
+<textarea id="uk9ittf_control" name="userInput" rows="6" cols="50"
+class="form-control input-sm uif-largeTextControl" data-role="Control" data-control_for="uk9ittf" ></textarea>
+<input name="script" type="hidden" data-role="script" value="createWatermark('uk9ittf_control', 'Enter user feedback here... ');" />
+</div>
+</td>
+</tr>
+</table>
+<div id="uopkgvt" class="uif-footer clearfix" data-parent="Uif-IncidentDetailGroup">
+<button id="u1fdwcfy" class="btn btn-primary uif-action uif-boxLayoutHorizontalItem" data-fieldsToSend="null" data-role="Action" data-submit_data="{&quot;methodToCall&quot;:&quot;submitReport&quot;}">
+Submit Report
+</button>
+<button id="u1fdwcgt" class="btn btn-primary uif-action uif-boxLayoutHorizontalItem" data-fieldsToSend="null" data-role="Action" data-submit_data="{&quot;methodToCall&quot;:&quot;back&quot;}">
+Retry
+</button>
+<button id="u1fdwcho" class="btn btn-primary uif-action uif-boxLayoutHorizontalItem" data-fieldsToSend="null" data-role="Action" data-submit_data="{&quot;methodToCall&quot;:&quot;cancel&quot;}">
+Cancel
+</button>
+</div>
+</section>
+<input name="script" type="hidden" data-role="dataScript" data-for="Uif-IncidentDetailGroup" value="var dataComponent = jQuery('#Uif-IncidentDetailGroup');dataComponent.data('validation_messages',{&quot;order&quot;:[&quot;uk9itqu&quot;,&quot;uk9itrp&quot;,&quot;uk9itsk&quot;,&quot;uk9ittf&quot;]});" />
+<section id="Uif-IncidentStackTraceGroup" class="uif-disclosure uif-incidentStackGroup uif-boxLayoutVerticalItem clearfix" data-parent="page1">
+<header id="Uif-IncidentStackTraceGroup_headerWrapper" class="uif-sectionHeader" data-header_for="Uif-IncidentStackTraceGroup">
+<h3 id='Uif-IncidentStackTraceGroup_header' class="uif-headerText">
+<span class="uif-headerText-span">
+Stacktrace (only in dev mode)
+</span>
+</h3>
+</header>
+<div id="u1pkrz6f" class="uif-inputField uif-boxLayoutVerticalItem pull-left clearfix" style="font-family: monospace; white-space: pre;width: auto;" data-role="InputField">
+<span id="u1pkrz6f_control" tabindex="0">
+<pre class='no-pad-bkgd-bor'>java.lang.RuntimeException:&nbsp;Exception&nbsp;evaluating&nbsp;expression:&nbsp;devMode
+at&nbsp;org.kuali.rice.krad.uif.view.DefaultExpressionEvaluator.evaluateExpression(DefaultExpressionEvaluator.java:439)
+at&nbsp;org.kuali.rice.krad.uif.view.DefaultExpressionEvaluator.evaluatePropertyExpression(DefaultExpressionEvaluator.java:498)
+at&nbsp;org.kuali.rice.krad.uif.view.DefaultExpressionEvaluator.evaluatePropertyExpressions(DefaultExpressionEvaluator.java:717)
+at&nbsp;org.kuali.rice.krad.uif.view.DefaultExpressionEvaluator.evaluateExpressionsOnConfigurable(DefaultExpressionEvaluator.java:412)
+at&nbsp;org.kuali.rice.krad.uif.lifecycle.model.EvaluateExpressionsTask.performLifecycleTask(EvaluateExpressionsTask.java:93)
+at&nbsp;org.kuali.rice.krad.uif.lifecycle.ViewLifecycleTaskBase.run(ViewLifecycleTaskBase.java:66)
+at&nbsp;org.kuali.rice.krad.uif.lifecycle.ViewLifecyclePhaseBase.run(ViewLifecyclePhaseBase.java:173)
+at&nbsp;org.kuali.rice.krad.uif.lifecycle.SynchronousViewLifecycleProcessor.performPhase(SynchronousViewLifecycleProcessor.java:192)
+at&nbsp;org.kuali.rice.krad.uif.lifecycle.ViewLifecycleBuild.runApplyModelPhase(ViewLifecycleBuild.java:189)
+at&nbsp;org.kuali.rice.krad.uif.lifecycle.ViewLifecycleBuild.run(ViewLifecycleBuild.java:69)
+at&nbsp;org.kuali.rice.krad.uif.lifecycle.ViewLifecycle.encapsulateLifecycle(ViewLifecycle.java:138)
+at&nbsp;org.kuali.rice.krad.uif.lifecycle.ViewLifecycle.buildView(ViewLifecycle.java:185)
+at&nbsp;org.kuali.rice.krad.web.service.impl.ModelAndViewServiceImpl.invokeViewLifecycle(ModelAndViewServiceImpl.java:305)
+at&nbsp;org.kuali.rice.krad.web.service.impl.ModelAndViewServiceImpl.prepareView(ModelAndViewServiceImpl.java:263)
+at&nbsp;org.kuali.rice.krad.web.controller.UifControllerHandlerInterceptor.postHandle(UifControllerHandlerInterceptor.java:188)
+at&nbsp;org.springframework.web.servlet.HandlerExecutionChain.applyPostHandle(HandlerExecutionChain.java:149)
+at&nbsp;org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:928)
+at&nbsp;org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:851)
+at&nbsp;org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:953)
+at&nbsp;org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:844)
+at&nbsp;javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+at&nbsp;org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:829)
+at&nbsp;javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+at&nbsp;org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+at&nbsp;org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+at&nbsp;org.kuali.rice.krad.web.filter.CharsetFilter.doFilter(CharsetFilter.java:58)
+at&nbsp;org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+at&nbsp;org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+at&nbsp;org.kuali.rice.krad.web.filter.UserLoginFilter.doFilter(UserLoginFilter.java:89)
+at&nbsp;org.kuali.rice.krad.web.filter.UserLoginFilter.doFilter(UserLoginFilter.java:77)
+at&nbsp;org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+at&nbsp;org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+at&nbsp;org.kuali.rice.krad.web.filter.BootstrapFilterChain.doFilter(BootstrapFilter.java:327)
+at&nbsp;org.kuali.rice.krad.web.filter.DummyLoginFilter.doFilter(DummyLoginFilter.java:83)
+at&nbsp;org.kuali.rice.krad.web.filter.DummyLoginFilter.doFilter(DummyLoginFilter.java:62)
+at&nbsp;org.kuali.rice.krad.web.filter.BootstrapFilterChain.doFilter(BootstrapFilter.java:320)
+at&nbsp;org.kuali.rice.krad.web.filter.BootstrapFilter.doFilter(BootstrapFilter.java:199)
+at&nbsp;org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+at&nbsp;org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+at&nbsp;org.kuali.rice.krad.web.filter.UifSessionTimeoutFilter.doFilter(UifSessionTimeoutFilter.java:130)
+at&nbsp;org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+at&nbsp;org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+at&nbsp;org.kuali.rice.core.web.Log4JContextClearingFilter.doFilterInternal(Log4JContextClearingFilter.java:37)
+at&nbsp;org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:106)
+at&nbsp;org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+at&nbsp;org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+at&nbsp;org.kuali.rice.krad.web.filter.HideWebInfFilter.doFilter(HideWebInfFilter.java:68)
+at&nbsp;org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+at&nbsp;org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+at&nbsp;org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:214)
+at&nbsp;org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:106)
+at&nbsp;org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+at&nbsp;org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+at&nbsp;org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+at&nbsp;org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+at&nbsp;org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+at&nbsp;org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+at&nbsp;org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+at&nbsp;org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:936)
+at&nbsp;org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+at&nbsp;org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+at&nbsp;org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1004)
+at&nbsp;org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+at&nbsp;org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+at&nbsp;java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+at&nbsp;java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+at&nbsp;java.lang.Thread.run(Thread.java:744)
+Caused&nbsp;by:&nbsp;org.springframework.expression.spel.SpelEvaluationException:&nbsp;EL1008E:(pos&nbsp;0):&nbsp;Property&nbsp;or&nbsp;field&nbsp;&amp;#39;devMode&amp;#39;&nbsp;cannot&nbsp;be&nbsp;found&nbsp;on&nbsp;object&nbsp;of&nbsp;type&nbsp;&amp;#39;org.kuali.rice.krad.web.form.UifFormBase&amp;#39;&nbsp;-&nbsp;maybe&nbsp;not&nbsp;public?
+at&nbsp;org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:214)
+at&nbsp;org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:85)
+at&nbsp;org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:78)
+at&nbsp;org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:93)
+at&nbsp;org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:89)
+at&nbsp;org.kuali.rice.krad.uif.view.DefaultExpressionEvaluator.evaluateExpression(DefaultExpressionEvaluator.java:436)
+...&nbsp;66&nbsp;more</pre>
+</span>
+</div>
+</section>
+<input name="script" type="hidden" data-role="dataScript" data-for="Uif-IncidentStackTraceGroup" value="var dataComponent = jQuery('#Uif-IncidentStackTraceGroup');dataComponent.data('validation_messages',{&quot;order&quot;:[&quot;u1pkrz6f&quot;]});" />
+<!-- PAGE RELATED VARS -->
+<input id='pageId' type="hidden" name="pageId" value="page1" >
+</main>
+<input name="script" type="hidden" data-role="dataScript" data-for="page1" value="var dataComponent = jQuery('#page1');dataComponent.data('validation_messages',{&quot;displayHeaderSummary&quot;:false,&quot;sections&quot;:[&quot;Uif-IncidentDetailGroup&quot;,&quot;Uif-IncidentStackTraceGroup&quot;],&quot;order&quot;:[&quot;s$Uif-IncidentDetailGroup&quot;,&quot;s$Uif-IncidentStackTraceGroup&quot;],&quot;pageLevel&quot;:true,&quot;forceShow&quot;:true});" /><input name="script" type="hidden" data-role="script" data-for="page1" value="jQuery(document).ready(function(e) {
+setupPage(true);});" /> </div>
+<!-- VIEW FOOTER -->
+<!-- DIALOGS/Placeholders -->
+<div id="Uif-Dialogs">
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="Uif-IncidentReportView" value="var dataComponent = jQuery('#Uif-IncidentReportView');dataComponent.data('req_indicator',&quot;*&quot;);dataComponent.data('action_defaults',{&quot;focusOnIdAfterSubmit&quot;:&quot;SELF&quot;,&quot;loadingMessage&quot;:&quot;Loading...&quot;,&quot;clearDirtyOnAction&quot;:false,&quot;dirtyOnAction&quot;:false,&quot;validate&quot;:false,&quot;performDirtyValidation&quot;:false,&quot;ajaxSubmit&quot;:true,&quot;disableBlocking&quot;:false,&quot;onClick&quot;:&quot;actionInvokeHandler(this);&quot;,&quot;submit_data&quot;:{},&quot;focusId&quot;:&quot;SELF&quot;,&quot;fieldsToSend&quot;:[]});dataComponent.data('field_validation_defaults',{&quot;displayMessages&quot;:true,&quot;useTooltip&quot;:true,&quot;messagingEnabled&quot;:true,&quot;hasOwnMessages&quot;:false,&quot;showIcons&quot;:false,&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;info&quot;:[],&quot;serverErrors&quot;:[],&quot;serverWarnings&quot;:[],&quot;serverInfo&quot;:[]});dataComponent.data('group_validation_defaults',{&quot;summarize&quot;:true,&quot;displayMessages&quot;:true,&quot;closeable&quot;:true,&quot;collapseFieldMessages&quot;:true,&quot;showPageSummaryHeader&quot;:true,&quot;displayLabel&quot;:true,&quot;displayHeaderSummary&quot;:true,&quot;hasOwnMessages&quot;:false,&quot;pageLevel&quot;:false,&quot;forceShow&quot;:false,&quot;isTableCollection&quot;:false,&quot;order&quot;:[],&quot;sections&quot;:[],&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;info&quot;:[],&quot;serverErrors&quot;:[],&quot;serverWarnings&quot;:[],&quot;serverInfo&quot;:[]});" /><input name="script" type="hidden" data-role="script" data-for="Uif-IncidentReportView" value="jQuery(document).ready(function(e) {jQuery.extend(jQuery.validator.messages, {
+required: 'Required',
+minExclusive: 'Value must be greater than {0}',
+maxInclusive: 'Value cannot be greater than {0}',
+minLengthConditional: 'Must be at least {0} characters',
+maxLengthConditional: 'Must be at most {0} characters'});});" />
+<span id="formInfo">
+<input type="hidden" name="viewId" value="Uif-IncidentReportView" >
+<input type="hidden" name="formKey" value="" >
+<input type="hidden" name="requestedFormKey" value="" >
+<input type="hidden" name="sessionId" value="CC4B81CE39B998D6B89FB8C9E7694FF3" >
+<input type="hidden" name="flowKey" value="" >
+<input type="hidden" name="view.applyDirtyCheck" value="true" >
+<input type="hidden" name="dirtyForm" value="false" >
+<input type="hidden" name="renderedInDialog" value="false" >
+<input type="hidden" name="view.singlePageView" value="true" >
+<input type="hidden" name="view.disableBrowserCache" value="true" >
+</span>
+<span id="formComplete"></span>
+</form>
+<!-- APPLICATION FOOTER -->
+<footer id="Uif-ApplicationFooter-Wrapper" >
+<div class="demo-thirdTier clearfix">
+<div class="demo-headerFooterContainer">
+<div>
+<div class="demo-kradDescription">
+<h2>About KRAD</h2>
+<div class="demo-blurb">Kuali Rapid Application Development (KRAD) is a framework that eases the
+development of enterprise web applications by providing reusable solutions and tooling that enables
+developers to build in a rapid and agile fashion. KRAD is a complete framework for web developers
+that provides infrastructure in all the major areas of an application (client, business, and data),
+and integrates with other modules of the Rice middleware project. In future releases, KNS will be
+absorbed into and replaced by KRAD.
+</div>
+</div>
+<div class="demo-contactInfo">
+<h2>Collaborate</h2>
+<div>
+<ul>
+<li>
+<a target="_self"
+href="https://groups.google.com/a/kuali.org/forum/?fromgroups#!forum/rice.usergroup.krad"
+id="KradSampleAppHome-UserGroupLink">KRAD User Group</a>
+</li>
+<li>
+<a target="_self" href="https://groups.google.com/a/kuali.org/groups/dir"
+id="KradSampleAppHome-KualiGroupsLink">Kuali Discussion Groups</a>
+</li>
+<li>
+<a target="_self" href="https://twitter.com/kuali" id="KradSampleAppHome-TweetLink">Follow
+our tweets</a>
+</li>
+<li>
+<a target="_self" href="http://jira.kuali.org/" id="KradSampleAppHome-BugLink">Report a
+bug</a>
+</li>
+<li>
+<a target="_self" href="http://www.kuali.org/join/how" id="KradSampleAppHome-CollabLink">Join Kuali</a>
+</li>
+</ul>
+</div>
+</div>
+<a class="twitter-timeline" width="240" data-tweet-limit="2" data-chrome="nofooter noscrollbar transparent noheader" data-theme="dark" href="https://twitter.com/kuali" data-widget-id="359754571758837761">Tweets by @kuali</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+</div>
+</div>
+<div id="Uif-BuildFooter" class="uif-group clearfix" data-parent="Uif-IncidentReportView">
+<img id="utxlu76" src="krad/images/logo-kuali.png" alt="Kuali Logo"
+class="uif-image uif-boxLayoutHorizontalItem" />
+<p id="u7pwch9" class="uif-message uif-boxLayoutHorizontalItem" >
+Application ID: TRAVEL </p>
+<p id="u7pwci4" class="uif-message uif-boxLayoutHorizontalItem" >
+Application Version: 2.5.0-M7-SNAPSHOT </p>
+<p id="u7pwciz" class="uif-message uif-boxLayoutHorizontalItem" >
+</p>
+<p id="u7pwcju" class="uif-message uif-boxLayoutHorizontalItem" >
+Environment: dev </p>
+<p id="u7pwckp" class="uif-message uif-boxLayoutHorizontalItem" >
+(Oracle9i) </p>
+<a id="u19u5a71" href="http://www.kuali.org" target="_self"
+class="uif-link uif-boxLayoutHorizontalItem" >Send Feedback</a>
+</div>
+</footer>
+<script type="text/javascript"
+src="themes/kboot/scripts/kboot.2.5.0-M7-SNAPSHOT.min.js"></script>
+<script type="text/javascript"
+src="scripts/kradSampleApp.js"></script>
+<script type="text/javascript">
+setGrowlDefaults({position:"top-right",sticky:false,life:7000});setBlockUIDefaults({fadeIn:400,fadeOut:800,centerX:true,centerY:true,blockingImage:"http://localhost:8080/krad-dev/krad/images/loading.gif"}, 'navigation');setBlockUIDefaults({fadeIn:400,fadeOut:800,centerX:true,centerY:true,blockingImage:"http://localhost:8080/krad-dev/krad/images/loader.gif"}, 'refresh');setConfigParam("kradImageLocation","http://localhost:8080/krad-dev/krad/images/");setConfigParam("kradUrl","http://localhost:8080/krad-dev/kr-krad");setConfigParam("applicationUrl","http://localhost:8080/krad-dev");setConfigParam("scriptCleanup","true");
+</script>
+</body>
+</html>

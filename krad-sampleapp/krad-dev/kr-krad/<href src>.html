@@ -1,0 +1,103 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> view.additionalMetaTags [in template "krad/WEB-INF/ftl/lib/html.ftl" at line 26, column 12]
+Tip: If the failing expression is known to be legally null/missing, either specify a default value with myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthessis: (myOptionVar.foo)!myDefault, (myOptionVar.foo)??
+The failing instruction (FTL stack trace):
+----------
+==> #list view.additionalMetaTags as tag [in template "krad/WEB-INF/ftl/lib/html.ftl" in macro "html" at line 26, column 5]
+@krad.html view=view [in template "krad/WEB-INF/ftl/fullView.ftl" at line 18, column 1]
+#include "fullView.ftl" [in template "krad/WEB-INF/ftl/uifRender.ftl" at line 74, column 9]
+#else [in template "krad/WEB-INF/ftl/uifRender.ftl" at line 73, column 5]
+----------
+Java stack trace (for programmers):
+----------
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:98)
+at freemarker.core.Expression.assertNonNull(Expression.java:205)
+at freemarker.core.IteratorBlock.accept(IteratorBlock.java:100)
+at freemarker.core.Environment.visit(Environment.java:265)
+at freemarker.core.MixedContent.accept(MixedContent.java:93)
+at freemarker.core.Environment.visit(Environment.java:265)
+at freemarker.core.Macro$Context.runMacro(Macro.java:209)
+at freemarker.core.Environment.visit(Environment.java:694)
+at freemarker.core.UnifiedCall.accept(UnifiedCall.java:116)
+at freemarker.core.Environment.visit(Environment.java:265)
+at freemarker.core.MixedContent.accept(MixedContent.java:93)
+at freemarker.core.Environment.visit(Environment.java:265)
+at freemarker.core.Environment.include(Environment.java:1712)
+at freemarker.core.Include.accept(Include.java:172)
+at freemarker.core.Environment.visit(Environment.java:265)
+at freemarker.core.IfBlock.accept(IfBlock.java:84)
+at freemarker.core.Environment.visit(Environment.java:265)
+at freemarker.core.MixedContent.accept(MixedContent.java:93)
+at freemarker.core.Environment.visitByHiddingParent(Environment.java:286)
+at freemarker.core.Environment.visitAndTransform(Environment.java:377)
+at freemarker.core.CompressedBlock.accept(CompressedBlock.java:73)
+at freemarker.core.Environment.visit(Environment.java:265)
+at freemarker.core.MixedContent.accept(MixedContent.java:93)
+at freemarker.core.Environment.visit(Environment.java:265)
+at freemarker.core.Environment.process(Environment.java:243)
+at freemarker.template.Template.process(Template.java:277)
+at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:366)
+at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:283)
+at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:233)
+at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:264)
+at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1201)
+at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:986)
+at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:933)
+at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:851)
+at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:953)
+at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:844)
+at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:829)
+at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+at org.kuali.rice.krad.web.filter.CharsetFilter.doFilter(CharsetFilter.java:58)
+at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+at org.kuali.rice.krad.web.filter.UserLoginFilter.doFilter(UserLoginFilter.java:89)
+at org.kuali.rice.krad.web.filter.UserLoginFilter.doFilter(UserLoginFilter.java:77)
+at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+at org.kuali.rice.krad.web.filter.BootstrapFilterChain.doFilter(BootstrapFilter.java:327)
+at org.kuali.rice.krad.web.filter.DummyLoginFilter.doFilter(DummyLoginFilter.java:83)
+at org.kuali.rice.krad.web.filter.DummyLoginFilter.doFilter(DummyLoginFilter.java:62)
+at org.kuali.rice.krad.web.filter.BootstrapFilterChain.doFilter(BootstrapFilter.java:320)
+at org.kuali.rice.krad.web.filter.BootstrapFilter.doFilter(BootstrapFilter.java:199)
+at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+at org.kuali.rice.krad.web.filter.UifSessionTimeoutFilter.doFilter(UifSessionTimeoutFilter.java:108)
+at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+at org.kuali.rice.core.web.Log4JContextClearingFilter.doFilterInternal(Log4JContextClearingFilter.java:37)
+at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:106)
+at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+at org.kuali.rice.krad.web.filter.HideWebInfFilter.doFilter(HideWebInfFilter.java:68)
+at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:214)
+at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:106)
+at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:936)
+at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1004)
+at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+at java.lang.Thread.run(Thread.java:744)

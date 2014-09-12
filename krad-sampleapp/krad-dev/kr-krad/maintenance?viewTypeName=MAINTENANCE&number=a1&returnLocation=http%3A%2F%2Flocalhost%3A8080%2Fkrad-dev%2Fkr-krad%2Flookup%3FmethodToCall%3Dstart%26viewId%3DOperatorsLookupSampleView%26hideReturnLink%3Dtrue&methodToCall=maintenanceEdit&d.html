@@ -1,0 +1,1044 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>
+Kuali :: Travel Account Maintenance
+</title>
+<link href="../themes/kboot/stylesheets/kboot.2.5.0-M7-SNAPSHOT.min.css" rel="stylesheet" type="text/css"/>
+<link href="../css/kradSampleApp.css" rel="stylesheet" type="text/css"/>
+</head>
+<body id="Uif-Application" style="display:none;">
+<a href="maintenance%3FviewTypeName=MAINTENANCE&amp;number=a1&amp;returnLocation=http%253A%252F%252Flocalhost%253A8080%252Fkrad-dev%252Fkr-krad%252Flookup%253FmethodToCall%253Dstart%2526viewId%253DOperatorsLookupSampleView%2526hideReturnLink%253Dtrue&amp;methodToCall=maintenanceEdit&amp;d.html#mainContent" class="sr-only">Skip to main content</a>
+<!-- APPLICATION HEADER -->
+<header id="Uif-ApplicationHeader-Wrapper" >
+<div class="demo-appHeader">
+<div>
+<div class="demo-headerFooterContainer">
+<a href="kradsampleapp%3FviewId=KradSampleAppHome.html" class="demo-brand">
+<div class="demo-brandLogo">
+</div>
+</a>
+<div>
+<ul class="demo-appNavigation">
+<li><a id="Demo-HomeLink"
+href="kradsampleapp%3FviewId=KradSampleAppHome.html">Home</a>
+</li>
+<li><a id="Demo-LibraryLink"
+href="kradsampleapp%3FviewId=ComponentLibraryHome.html">Library</a>
+</li>
+<li><a id="Demo-DemoLink"
+href="kradsampleapp%3FviewId=KradSampleAppDemo.html">Demo</a></li>
+<li><a id="Demo-DownloadLink" href="http://kuali.org/download/rice">Download</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Backdoor info (here to inherit stickyness with the header, if set) -->
+</header>
+<!-- APPLICATION FORM/CONTENT - VIEW -->
+<form id="kualiForm" action="http://localhost:8080/krad-dev/kr-krad/maintenance" method="post" accept-charset="UTF-8"
+>
+<!-- VIEW -->
+<div id="TravelAccount-MaintenanceView" class="clearfix uif-maintenanceView" title="Travel Account Maintenance" data-enter_key="@DEFAULT" data-role="View">
+<!-- BREADCRUMBS -->
+<div id="Uif-BreadcrumbWrapper" ></div>
+<!-- VIEW HEADER -->
+<header id="TravelAccount-MaintenanceView_headerWrapper" class="container-fluid uif-viewHeader uif-header" data-header_for="TravelAccount-MaintenanceView">
+<h1 id="TravelAccount-MaintenanceView_header" class="uif-headerText">
+<span class="uif-headerText-span">
+Travel Account Maintenance
+</span>
+</h1>
+<div id="TravelAccount-MaintenanceView_headerRightGroup" class="uif-gridGroup uif-docheader uif-header-rightGroup" data-parent="TravelAccount-MaintenanceView">
+<table id="u1jmfbxp" class="table table-condensed table-bordered uif-gridLayout" role="presentation">
+<tr >
+<th scope="row"
+>
+<label id="u1x0y641_label" for="u1x0y641_control" class="uif-label displayWith-u1x0y641 uif-labelBlock" data-label_for="u1x0y641"> Document Number: </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="u1x0y641" class="uif-inputField uif-documentNumber" data-role="InputField" data-label="Document Number">
+<span id="u1x0y641_control" tabindex="0">
+3940
+</span>
+</div>
+</td>
+<th scope="row"
+>
+<label id="u1x0y64w_label" for="u1x0y64w_control" class="uif-label displayWith-u1x0y64w uif-labelBlock" data-label_for="u1x0y64w"> Document Status: </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="u1x0y64w" class="uif-inputField uif-documentStatus" data-role="InputField" data-label="Document Status">
+<span id="u1x0y64w_control" tabindex="0">
+INITIATED
+</span>
+</div>
+</td>
+</tr>
+<tr >
+<th scope="row"
+>
+<label id="u1x0y65r_label" for="u1x0y65r_control" class="uif-label displayWith-u1x0y65r uif-labelBlock" data-label_for="u1x0y65r"> Initiator Network Id: </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="u1x0y65r" class="uif-inputField uif-documentInitiatorNetworkId" data-role="InputField" data-label="Initiator Network Id">
+<span id="u1x0y65r_control" tabindex="0">
+admin
+</span>
+</div>
+</td>
+<th scope="row"
+>
+<label id="u1x0y66m_label" for="u1x0y66m_control" class="uif-label displayWith-u1x0y66m uif-labelBlock" data-label_for="u1x0y66m"> Creation Timestamp: </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="u1x0y66m" class="uif-inputField uif-documentCreateDate" data-role="InputField" data-label="Creation Timestamp">
+<span id="u1x0y66m_control" tabindex="0">
+12:21 PM 09/12/2014
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="TravelAccount-MaintenanceView_headerRightGroup" value="var dataComponent = jQuery('#TravelAccount-MaintenanceView_headerRightGroup');dataComponent.data('validation_messages',{&quot;order&quot;:[&quot;u1x0y641&quot;,&quot;u1x0y64w&quot;,&quot;u1x0y65r&quot;,&quot;u1x0y66m&quot;],&quot;displayMessages&quot;:false});" />
+</header>
+<!-- VIEW CONTENT -->
+<div id="Uif-ViewContentWrapper" class="uif-viewContentWrapper container-fluid">
+<!-- VIEW NAVIGATION -->
+<div id="Uif-BreadcrumbUpdate" style="display:none;">
+<ol class="uif-breadcrumbs" role="navigation">
+<li>
+<a id="utj7yy0" data-role="breadcrumb" href="maintenance%3FmethodToCall=maintenanceEdit&amp;formKey=5a7b77c6-ca2f-48f7-b1c5-64a7513a92e8&amp;pageId=ue1o6tx&amp;number=a1&amp;viewTypeName=MAINTENANCE&amp;dataObjectClassName=org.kuali.rice.krad.demo.travel.dataobject.TravelAccount&amp;returnLocation=http%253A%25.html" >Travel Account Maintenance</a>
+</li>
+</ol>
+<input name="script" type="hidden" data-role="script" value="setupBreadcrumbs(false);" />
+</div>
+<div id="Uif-ViewHeaderUpdate" style="display:none;">
+<header id="TravelAccount-MaintenanceView_headerWrapper" class="container-fluid uif-viewHeader uif-header" data-header_for="TravelAccount-MaintenanceView">
+<h1 id="TravelAccount-MaintenanceView_header" class="uif-headerText">
+<span class="uif-headerText-span">
+Travel Account Maintenance
+</span>
+</h1>
+<div id="TravelAccount-MaintenanceView_headerRightGroup" class="uif-gridGroup uif-docheader uif-header-rightGroup" data-parent="TravelAccount-MaintenanceView">
+<table id="u1jmfbxp" class="table table-condensed table-bordered uif-gridLayout" role="presentation">
+<tr >
+<th scope="row"
+>
+<label id="u1x0y641_label" for="u1x0y641_control" class="uif-label displayWith-u1x0y641 uif-labelBlock" data-label_for="u1x0y641"> Document Number: </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="u1x0y641" class="uif-inputField uif-documentNumber" data-role="InputField" data-label="Document Number">
+<span id="u1x0y641_control" tabindex="0">
+3940
+</span>
+</div>
+</td>
+<th scope="row"
+>
+<label id="u1x0y64w_label" for="u1x0y64w_control" class="uif-label displayWith-u1x0y64w uif-labelBlock" data-label_for="u1x0y64w"> Document Status: </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="u1x0y64w" class="uif-inputField uif-documentStatus" data-role="InputField" data-label="Document Status">
+<span id="u1x0y64w_control" tabindex="0">
+INITIATED
+</span>
+</div>
+</td>
+</tr>
+<tr >
+<th scope="row"
+>
+<label id="u1x0y65r_label" for="u1x0y65r_control" class="uif-label displayWith-u1x0y65r uif-labelBlock" data-label_for="u1x0y65r"> Initiator Network Id: </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="u1x0y65r" class="uif-inputField uif-documentInitiatorNetworkId" data-role="InputField" data-label="Initiator Network Id">
+<span id="u1x0y65r_control" tabindex="0">
+admin
+</span>
+</div>
+</td>
+<th scope="row"
+>
+<label id="u1x0y66m_label" for="u1x0y66m_control" class="uif-label displayWith-u1x0y66m uif-labelBlock" data-label_for="u1x0y66m"> Creation Timestamp: </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="u1x0y66m" class="uif-inputField uif-documentCreateDate" data-role="InputField" data-label="Creation Timestamp">
+<span id="u1x0y66m_control" tabindex="0">
+12:21 PM 09/12/2014
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="TravelAccount-MaintenanceView_headerRightGroup" value="var dataComponent = jQuery('#TravelAccount-MaintenanceView_headerRightGroup');dataComponent.data('validation_messages',{&quot;order&quot;:[&quot;u1x0y641&quot;,&quot;u1x0y64w&quot;,&quot;u1x0y65r&quot;,&quot;u1x0y66m&quot;],&quot;displayMessages&quot;:false});" />
+</header>
+</div>
+<main id="ue1o6tx" class="uif-maintenancePage" data-server_messages="false" data-role="Page" data-parent="TravelAccount-MaintenanceView" data-focusId="FIRST">
+<header id="ue1o6tx_headerWrapper" class="uif-pageHeader clearfix uif-hideHeaderText" data-header_for="ue1o6tx">
+<div id="u1axwol" class="uif-verticalBoxGroup uif-header-lowerGroup" data-parent="ue1o6tx">
+<div id="ufem3bz" class="uif-rightAligned-headerFieldGroup uif-boxLayoutVerticalItem clearfix" data-parent="u1axwol">
+<button id="u6jwnh4" class="btn btn-default btn-xs uif-action uif-boxLayoutHorizontalItem" data-fieldsToSend="null" data-onClick="expandDisclosures();" data-role="Action">
+Expand All
+</button>
+<button id="u6jwnhz" class="btn btn-default btn-xs uif-action uif-boxLayoutHorizontalItem" data-fieldsToSend="null" data-onClick="collapseDisclosures();" data-role="Action">
+Collapse All
+</button>
+</div>
+<div id="ufem3cu" class="uif-rightAligned-headerFieldGroup uif-boxLayoutVerticalItem clearfix" data-parent="u1axwol">
+<p id="upcc7t4" class="uif-requiredInstructionsMessage uif-boxLayoutHorizontalItem" >
+* indicates required field </p>
+</div>
+</div>
+</header>
+<a id="mainContent"></a>
+<section id="u4e3n2o" class="uif-disclosure uif-boxLayoutVerticalItem clearfix" data-parent="ue1o6tx">
+<header id="u4e3n2o_headerWrapper" class="uif-sectionHeader" data-header_for="u4e3n2o">
+<h3 id='u4e3n2o_header' class="uif-headerText">
+<span class="uif-headerText-span">
+Document Overview
+</span>
+</h3>
+</header>
+<div id="u4e3n2o_disclosureContent" data-role="disclosureContent" data-open="true" class="uif-disclosureContent">
+<table id="u17suhm2" class="table table-condensed table-bordered uif-gridLayout" role="presentation">
+<tr >
+<th scope="row"
+>
+<label id="u6qps5w_label" for="u6qps5w_control" class="uif-label displayWith-u6qps5w uif-labelBlock" data-label_for="u6qps5w"> Description: <span class="uif-requiredMessage">*</span> </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="u6qps5w" class="uif-inputField uif-documentDescription" data-parent="u4e3n2o" data-role="InputField" data-label="Description">
+<input id='u6qps5w_control' type="text" name="document.documentHeader.documentDescription" value="" class="form-control input-sm uif-textControl required validChar-document.documentHeader.documentDescription0" data-role="Control" data-control_for="u6qps5w" size="45" maxlength="255" >
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u6qps5w" value="jQuery(document).ready(function(e) {
+runValidationScript(function(){
+jQuery.validator.addMethod(&quot;validChar-document.documentHeader.documentDescription0&quot;, function(value, element) {
+return this.optional(element) || /^[\u0000-\uFFFF]*$/.test(value);}, &quot;Must not contain any whitespace (spaces, returns, etc)&quot;);});});" /></td>
+<th scope="row"
+rowspan="2" >
+<label id="u6qps6r_label" for="u6qps6r_control" class="uif-label displayWith-u6qps6r uif-labelBlock" data-label_for="u6qps6r"> Explanation: </label></th>
+<td
+rowspan="2" class="uif-gridLayoutCell" >
+<div id="u6qps6r" class="uif-inputField uif-documentExplaination" data-parent="u4e3n2o" data-role="InputField" data-label="Explanation">
+<textarea id="u6qps6r_control" name="document.documentHeader.explanation" rows="3" cols="40"
+class="form-control input-sm uif-textAreaControl validChar-document.documentHeader.explanation0" data-role="Control" data-control_for="u6qps6r" maxlength="400"></textarea>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u6qps6r" value="jQuery(document).ready(function(e) {
+runValidationScript(function(){
+jQuery.validator.addMethod(&quot;validChar-document.documentHeader.explanation0&quot;, function(value, element) {
+return this.optional(element) || /^[\u0000-\uFFFF]*$/.test(value);}, &quot;Must not contain any whitespace (spaces, returns, etc)&quot;);});});" /></td>
+</tr>
+<tr >
+<th scope="row"
+rowspan="1" >
+<label id="u6qps7m_label" for="u6qps7m_control" class="uif-label displayWith-u6qps7m uif-labelBlock" data-label_for="u6qps7m"> Organization Document Number: </label></th>
+<td
+rowspan="1" class="uif-gridLayoutCell" >
+<div id="u6qps7m" class="uif-inputField uif-organizationDocumentNumber" data-parent="u4e3n2o" data-role="InputField" data-label="Organization Document Number">
+<input id='u6qps7m_control' type="text" name="document.documentHeader.organizationDocumentNumber" value="" class="form-control input-sm uif-textControl validChar-document.documentHeader.organizationDocumentNumber0" data-role="Control" data-control_for="u6qps7m" size="12" maxlength="10" >
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u6qps7m" value="jQuery(document).ready(function(e) {
+runValidationScript(function(){
+jQuery.validator.addMethod(&quot;validChar-document.documentHeader.organizationDocumentNumber0&quot;, function(value, element) {
+return this.optional(element) || /^[\u0000-\uFFFF]*$/.test(value);}, &quot;Must not contain any whitespace (spaces, returns, etc)&quot;);});});" /></td>
+</table>
+</div>
+<input name="script" type="hidden" data-role="script" value="createDisclosure('u4e3n2o', 'u4e3n2o_headerWrapper', 'ubeeqsd', true,
+'icon-caret-right', 'icon-caret-down', 500,
+true, false);" />
+</section>
+<input name="script" type="hidden" data-role="dataScript" data-for="u4e3n2o" value="var dataComponent = jQuery('#u4e3n2o');dataComponent.data('validation_messages',{&quot;order&quot;:[&quot;u6qps5w&quot;,&quot;u6qps6r&quot;,&quot;u6qps7m&quot;]});" />
+<section id="u1ssprty" class="uif-disclosure uif-boxLayoutVerticalItem clearfix" data-parent="ue1o6tx">
+<header id="u1ssprty_headerWrapper" class="uif-sectionHeader" data-header_for="u1ssprty">
+<h3 id='u1ssprty_header' class="uif-headerText">
+<span class="uif-headerText-span">
+Account Information
+</span>
+</h3>
+</header>
+<div id="u1ssprty_disclosureContent" data-role="disclosureContent" data-open="true" class="uif-disclosureContent">
+<table id="u18xusow" class="table table-condensed table-bordered uif-gridLayout uif-table-fixed" role="presentation">
+<tr >
+<th scope="col"
+class="uif-gridLayoutCell" >
+<div id="uodayyj" class="uif-spaceField" >
+&nbsp;
+</div>
+</th>
+<th scope="col"
+class="uif-gridLayoutCell" >
+<header id="u3p9zip" class="uif-header" >
+<h4 id='u3p9zip_header' class="uif-headerText">
+<span class="uif-headerText-span">
+Old
+</span>
+</h4>
+</header>
+</th>
+<th scope="col"
+class="uif-gridLayoutCell" >
+<header id="u3p9zjk" class="uif-header" >
+<h4 id='u3p9zjk_header' class="uif-headerText">
+<span class="uif-headerText-span">
+New
+</span>
+</h4>
+</header>
+</th>
+</tr>
+<tr class="uif-compared" >
+<th scope="row"
+>
+<label id="uedhnge_comp0_label" for="uedhnge_comp0_control" class="uif-label displayWith-uedhnge_comp0 uif-labelBlock" data-label_for="uedhnge_comp0"> Travel Account Number: <span class="uif-requiredMessage">*</span> </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="uedhnge_comp0" class="uif-inputField" data-role="InputField" data-label="Travel Account Number">
+<span id="uedhnge_comp0_control" tabindex="0">
+<a id="uqge9xk" href="inquiry%3Fnumber=a1&amp;methodToCall=start&amp;dataObjectClassName=org.kuali.rice.krad.demo.travel.dataobject.TravelAccount.html" target="_self"
+class="uif-link" title="Display Travel Account with Travel Account Number=a1" data-onClick="e.preventDefault(); openLinkInDialog(jQuery(this), &quot;Uif-DialogGroup-Inquiry&quot;);" data-role="Action">
+a1
+</a>
+</span>
+</div>
+</td>
+<td
+class="uif-gridLayoutCell" >
+<div id="uedhnge_comp1" class="uif-inputField" data-role="InputField" data-label="Travel Account Number">
+<span id="uedhnge_comp1_control" tabindex="0">
+</span>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="uedhnge_comp1" value="jQuery(document).ready(function(e) {showChangeIcon('uedhnge_comp1');});" /></td>
+</tr>
+<tr >
+<th scope="row"
+>
+<label id="uedhnh9_comp0_label" for="uedhnh9_comp0_control" class="uif-label displayWith-uedhnh9_comp0 uif-labelBlock" data-label_for="uedhnh9_comp0"> Travel Account Name: <span class="uif-requiredMessage">*</span> </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="uedhnh9_comp0" class="uif-inputField" data-role="InputField" data-label="Travel Account Name">
+<span id="uedhnh9_comp0_control" tabindex="0">
+Travel Account 1
+</span>
+</div>
+</td>
+<td
+class="uif-gridLayoutCell" >
+<div id="uedhnh9_comp1" class="uif-inputField" data-parent="u1ssprty" data-role="InputField" data-label="Travel Account Name">
+<input id='uedhnh9_comp1_control' type="text" name="document.newMaintainableObject.dataObject.name" value="Travel Account 1" class="form-control input-sm uif-textControl required validChar-document.newMaintainableObject.dataObject.name0" data-role="Control" data-control_for="uedhnh9_comp1" size="40" maxlength="40" >
+</div>
+<input name="script" type="hidden" data-role="script" data-for="uedhnh9_comp1" value="jQuery(document).ready(function(e) {
+runValidationScript(function(){
+jQuery.validator.addMethod(&quot;validChar-document.newMaintainableObject.dataObject.name0&quot;, function(value, element) {
+return this.optional(element) || /^[\u0000-\uFFFF]*$/.test(value);}, &quot;Must not contain any whitespace (spaces, returns, etc)&quot;);});});" /></td>
+</tr>
+<tr >
+<th scope="row"
+>
+<label id="uedhni4_comp0_label" for="uedhni4_comp0_control" class="uif-label displayWith-uedhni4_comp0 uif-labelBlock" data-label_for="uedhni4_comp0"> Travel Account Type Code: <span class="uif-requiredMessage">*</span> </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="uedhni4_comp0" class="uif-inputField" data-role="InputField" data-label="Travel Account Type Code">
+<span id="uedhni4_comp0_control" tabindex="0">
+Income
+</span>
+</div>
+</td>
+<td
+class="uif-gridLayoutCell" >
+<div id="uedhni4_comp1" class="uif-inputField" data-parent="u1ssprty" data-role="InputField" data-label="Travel Account Type Code">
+<div class="input-group">
+<fieldset id="uedhni4_comp1_fieldset" aria-labelledby="uedhni4_comp1_label" class="uif-verticalRadioFieldset"
+data-type="RadioSet">
+<legend style="display: none">Travel Account Type Code</legend>
+<span class="uif-tooltip">
+<input type="radio" id="uedhni4_comp1_control_0" name="document.newMaintainableObject.dataObject.accountTypeCode" value="CAT" class="uif-verticalRadioControl required validChar-document.newMaintainableObject.dataObject.accountTypeCode0" data-role="Control" data-control_for="uedhni4_comp1" >
+<label for="uedhni4_comp1_control_0">Clearing</label>
+</span>
+<span class="uif-tooltip">
+<input type="radio" id="uedhni4_comp1_control_1" name="document.newMaintainableObject.dataObject.accountTypeCode" value="EAT" class="uif-verticalRadioControl required validChar-document.newMaintainableObject.dataObject.accountTypeCode0" data-role="Control" data-control_for="uedhni4_comp1" >
+<label for="uedhni4_comp1_control_1">Expense</label>
+</span>
+<span class="uif-tooltip">
+<input type="radio" id="uedhni4_comp1_control_2" name="document.newMaintainableObject.dataObject.accountTypeCode" value="IAT" checked="checked" class="uif-verticalRadioControl required validChar-document.newMaintainableObject.dataObject.accountTypeCode0" data-role="Control" data-control_for="uedhni4_comp1" >
+<label for="uedhni4_comp1_control_2">Income</label>
+</span>
+</fieldset>
+<div class="input-group-btn">
+<button id="uedhni4_comp1_quickfinder_act" class="btn btn-default uif-action icon-search" data-fieldsToSend="null" data-onClick="showLookupDialog(&quot;uedhni4_comp1_quickfinder_act&quot;,false,&quot;Uif-DialogGroup-Lookup&quot;);" data-role="Action" data-focusId="NEXT_INPUT:uedhni4_comp1_quickfinder_act" data-submit_data="{&quot;actionParameters[conversionFields]&quot;:&quot;accountTypeCode:document.newMaintainableObject.dataObject.accountTypeCode&quot;,&quot;methodToCall&quot;:&quot;performLookup&quot;,&quot;actionParameters[quickfinderId]&quot;:&quot;uedhni4_comp1_quickfinder&quot;,&quot;actionParameters[lookupParameters]&quot;:&quot;document.newMaintainableObject.dataObject.accountTypeCode:accountTypeCode&quot;,&quot;actionParameters[multipleValuesSelect]&quot;:&quot;false&quot;,&quot;actionParameters[dataObjectClassName]&quot;:&quot;org.kuali.rice.krad.demo.travel.dataobject.TravelAccountType&quot;,&quot;actionParameters[baseLookupUrl]&quot;:&quot;http://localhost:8080/krad-dev/kr-krad/lookup&quot;}">
+</button>
+</div>
+</div>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="uedhni4_comp1" value="jQuery(document).ready(function(e) {
+runValidationScript(function(){
+jQuery.validator.addMethod(&quot;validChar-document.newMaintainableObject.dataObject.accountTypeCode0&quot;, function(value, element) {
+return this.optional(element) || /^[\u0000-\uFFFF]*$/.test(value);}, &quot;Must not contain any whitespace (spaces, returns, etc)&quot;);});});" /></td>
+</tr>
+<tr >
+<th scope="row"
+>
+<label id="uedhniz_comp0_label" for="uedhniz_comp0_control" class="uif-label displayWith-uedhniz_comp0 uif-labelBlock" data-label_for="uedhniz_comp0"> Fiscal Officer User ID: </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="uedhniz_comp0" class="uif-inputField" data-role="InputField" data-label="Fiscal Officer User ID">
+<span id="uedhniz_comp0_control" tabindex="0">
+fred
+</span>
+</div>
+</td>
+<td
+class="uif-gridLayoutCell" >
+<div id="uedhniz_comp1" class="uif-inputField" data-parent="u1ssprty" data-role="InputField" data-label="Fiscal Officer User ID">
+<input id='uedhniz_comp1_control' type="text" name="document.newMaintainableObject.dataObject.foId" value="fred" class="form-control input-sm uif-textControl validChar-document.newMaintainableObject.dataObject.foId0" data-role="Control" data-control_for="uedhniz_comp1" size="10" maxlength="40" >
+</div>
+<input name="script" type="hidden" data-role="script" data-for="uedhniz_comp1" value="jQuery(document).ready(function(e) {
+runValidationScript(function(){
+jQuery.validator.addMethod(&quot;validChar-document.newMaintainableObject.dataObject.foId0&quot;, function(value, element) {
+return this.optional(element) || /^[\u0000-\uFFFF]*$/.test(value);}, &quot;Must not contain any whitespace (spaces, returns, etc)&quot;);});});" /></td>
+</tr>
+<tr >
+<th scope="row"
+>
+<label id="uedhnju_comp0_label" for="uedhnju_comp0_control" class="uif-label displayWith-uedhnju_comp0 uif-labelBlock" data-label_for="uedhnju_comp0"> Date Created: <span class="uif-requiredMessage">*</span> </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="uedhnju_comp0" class="uif-inputField" data-role="InputField" data-label="Date Created">
+<span id="uedhnju_comp0_control" tabindex="0">
+06/01/2014
+</span>
+</div>
+</td>
+<td
+class="uif-gridLayoutCell" >
+<div id="uedhnju_comp1" class="uif-inputField" data-role="InputField" data-label="Date Created">
+<span id="uedhnju_comp1_control" tabindex="0">
+06/01/2014
+</span>
+</div>
+</td>
+</tr>
+<tr >
+<th scope="row"
+>
+<label id="uedhnkp_comp0_label" for="uedhnkp_comp0_control" class="uif-label displayWith-uedhnkp_comp0 uif-labelBlock" data-label_for="uedhnkp_comp0"> Subsidized Percent: </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="uedhnkp_comp0" class="uif-inputField" data-role="InputField" data-label="Subsidized Percent">
+<span id="uedhnkp_comp0_control" tabindex="0">
+</span>
+</div>
+</td>
+<td
+class="uif-gridLayoutCell" >
+<div id="uedhnkp_comp1" class="uif-inputField" data-parent="u1ssprty" data-role="InputField" data-label="Subsidized Percent">
+<input id='uedhnkp_comp1_control' type="text" name="document.newMaintainableObject.dataObject.subsidizedPercent" value="" class="form-control input-sm uif-textControl validChar-document.newMaintainableObject.dataObject.subsidizedPercent0 dependsOn-document.newMaintainableObject.dataObject.accountTypeCode" data-role="Control" data-control_for="uedhnkp_comp1" size="6" maxlength="5" >
+<input name="script" type="hidden" data-role="script" value="createWatermark('uedhnkp_comp1_control', '##.## ');" />
+</div>
+<input name="script" type="hidden" data-role="script" data-for="uedhnkp_comp1" value="jQuery(document).ready(function(e) {
+runValidationScript(function(){
+jQuery.validator.addMethod(&quot;validChar-document.newMaintainableObject.dataObject.subsidizedPercent0&quot;, function(value, element) {
+return this.optional(element) || /^(\$)?([0-9]*\.)?[0-9]+()?$/.test(value);}, &quot;Must be a non-zero positive number, with any number of digits to the right of the decimal.&quot;);});
+runValidationScript(function(){setupShowReqIndicatorCheck('document.newMaintainableObject.dataObject.accountTypeCode', 'document.newMaintainableObject.dataObject.subsidizedPercent', function(){
+return ((coerceValue('document.newMaintainableObject.dataObject.accountTypeCode').toUpperCase() == &quot;IAT&quot;.toUpperCase()));});
+});
+runValidationScript(function(){jQuery('[name=&quot;document.newMaintainableObject.dataObject.subsidizedPercent&quot;]').rules(&quot;add&quot;, {required: function(element){
+return ((coerceValue('document.newMaintainableObject.dataObject.accountTypeCode').toUpperCase() == &quot;IAT&quot;.toUpperCase()));}
+});});});" /></td>
+</tr>
+</table>
+</div>
+<input name="script" type="hidden" data-role="script" value="createDisclosure('u1ssprty', 'u1ssprty_headerWrapper', 'uu5remf', true,
+'icon-caret-right', 'icon-caret-down', 500,
+true, false);" />
+<input name="script" type="hidden" data-role="script" data-for="uu5remf" value="jQuery(document).ready(function(e) {showChangeIconOnDisclosure('u1ssprty');});" /> </section>
+<input name="script" type="hidden" data-role="dataScript" data-for="u1ssprty" value="var dataComponent = jQuery('#u1ssprty');dataComponent.data('validation_messages',{&quot;order&quot;:[&quot;uedhnge_comp0&quot;,&quot;uedhnge_comp1&quot;,&quot;uedhnh9_comp0&quot;,&quot;uedhnh9_comp1&quot;,&quot;uedhni4_comp0&quot;,&quot;uedhni4_comp1&quot;,&quot;uedhniz_comp0&quot;,&quot;uedhniz_comp1&quot;,&quot;uedhnju_comp0&quot;,&quot;uedhnju_comp1&quot;,&quot;uedhnkp_comp0&quot;,&quot;uedhnkp_comp1&quot;]});" />
+<section id="u1dgh1j" class="uif-disclosure uif-boxLayoutVerticalItem clearfix" data-add_controls="#u1joqsvz_add_control,#u1joqswu_add_control" data-parent="ue1o6tx">
+<header id="u1dgh1j_headerWrapper" class="uif-sectionHeader" data-header_for="u1dgh1j">
+<h3 id='u1dgh1j_header' class="uif-headerText">
+<span class="uif-headerText-span">
+Sub Accounts
+</span>
+</h3>
+</header>
+<div id="u1dgh1j_disclosureContent" data-role="disclosureContent" data-open="true" class="uif-disclosureContent">
+<section id="u4924c_add" class="uif-collectionItem uif-gridCollectionItem uif-collectionAddItem" data-parent="u1dgh1j">
+<header id="u4924c_add_headerWrapper" class="uif-header" data-header_for="u4924c_add">
+<h4 id='u4924c_add_header' class="uif-headerText">
+<span class="uif-headerText-span">
+Add Header
+</span>
+</h4>
+</header>
+<table id="u1mgj9xy_add" class="table table-condensed table-bordered uif-gridLayout uif-table-fixed" role="presentation">
+<tr >
+<th scope="row"
+>
+<label id="u1joqsvz_add_label" for="u1joqsvz_add_control" class="uif-label displayWith-u1joqsvz_add uif-labelBlock" data-label_for="u1joqsvz_add"> Travel Sub Account Number: <span class="uif-requiredMessage">*</span> </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="u1joqsvz_add" class="uif-inputField" data-parent="u4924c_add" data-role="InputField" data-label="Travel Sub Account Number">
+<input id='u1joqsvz_add_control' type="text" name="newCollectionLines['document.newMaintainableObject.dataObject.subAccounts'].subAccount" value="" class="form-control input-sm uif-textControl ignoreValid required validChar-newCollectionLines['document.newMaintainableObject.dataObject.subAccounts'].subAccount0" data-role="Control" data-control_for="u1joqsvz_add" size="10" maxlength="10" >
+<input name="script" type="hidden" data-role="script" value="uppercaseValue('u1joqsvz_add_control');" />
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u1joqsvz_add" value="jQuery(document).ready(function(e) {
+runValidationScript(function(){
+jQuery.validator.addMethod(&quot;validChar-newCollectionLines[\'document.newMaintainableObject.dataObject.subAccounts\'].subAccount0&quot;, function(value, element) {
+return this.optional(element) || /^[\u0000-\uFFFF]*$/.test(value);}, &quot;Must not contain any whitespace (spaces, returns, etc)&quot;);});});" /></td>
+</tr>
+<tr >
+<th scope="row"
+>
+<label id="u1joqswu_add_label" for="u1joqswu_add_control" class="uif-label displayWith-u1joqswu_add uif-labelBlock" data-label_for="u1joqswu_add"> Sub Account Name: <span class="uif-requiredMessage">*</span> </label></th>
+<td
+class="uif-gridLayoutCell" >
+<div id="u1joqswu_add" class="uif-inputField" data-parent="u4924c_add" data-role="InputField" data-label="Sub Account Name">
+<input id='u1joqswu_add_control' type="text" name="newCollectionLines['document.newMaintainableObject.dataObject.subAccounts'].subAccountName" value="" class="form-control input-sm uif-textControl ignoreValid required validChar-newCollectionLines['document.newMaintainableObject.dataObject.subAccounts'].subAccountName0" data-role="Control" data-control_for="u1joqswu_add" size="40" maxlength="40" >
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u1joqswu_add" value="jQuery(document).ready(function(e) {
+runValidationScript(function(){
+jQuery.validator.addMethod(&quot;validChar-newCollectionLines[\'document.newMaintainableObject.dataObject.subAccounts\'].subAccountName0&quot;, function(value, element) {
+return this.optional(element) || /^[\u0000-\uFFFF]*$/.test(value);}, &quot;Must not contain any whitespace (spaces, returns, etc)&quot;);});});" /></td>
+</tr>
+</table>
+<div id="ux73s97_add" class="uif-footer clearfix" data-parent="u4924c_add">
+<button id="u1dgh1j_add" class="btn btn-default btn-xs uif-action uif-boxLayoutHorizontalItem" data-fieldsToSend="null" data-preSubmitCall="var valid=validateAddLine(&#39;u1dgh1j&#39;);return valid;" data-dismissdialogoption="REQUEST" data-dirtyOnAction="true" data-ajaxReturnType="update-component" data-refreshId="u1dgh1j" data-default_enter_key_action="true" data-role="Action" data-loadingMessage="Adding Line..." data-focusId="u1joqsvz_add_control" data-submit_data="{&quot;methodToCall&quot;:&quot;addLine&quot;,&quot;actionParameters[actionType]&quot;:&quot;addLine&quot;,&quot;actionParameters[selectedCollectionPath]&quot;:&quot;document.newMaintainableObject.dataObject.subAccounts&quot;,&quot;actionParameters[actionEvent]&quot;:&quot;addLine&quot;,&quot;actionParameters[selectedCollectionId]&quot;:&quot;u1dgh1j&quot;}" data-jumpToId="u1dgh1j">
+Add
+</button>
+</div>
+</section>
+<input name="script" type="hidden" data-role="dataScript" data-for="u4924c_add" value="var dataComponent = jQuery('#u4924c_add');dataComponent.data('validation_messages',{&quot;order&quot;:[&quot;u1joqsvz_add&quot;,&quot;u1joqswu_add&quot;]});" /></div>
+<input name="script" type="hidden" data-role="script" value="createDisclosure('u1dgh1j', 'u1dgh1j_headerWrapper', 'upb2rew', true,
+'icon-caret-right', 'icon-caret-down', 500,
+true, false);" />
+</section>
+<input name="script" type="hidden" data-role="dataScript" data-for="u1dgh1j" value="var dataComponent = jQuery('#u1dgh1j');dataComponent.data('validation_messages',{&quot;sections&quot;:[&quot;u4924c_add&quot;],&quot;order&quot;:[&quot;s$u4924c_add&quot;]});" />
+<section id="ubzye9d" class="uif-disclosure tableborders wrap uif-boxLayoutVerticalItem clearfix" data-add_controls="#u1c1yxo2_add_control,#u5b5sz6_control" data-parent="ue1o6tx">
+<header id="ubzye9d_headerWrapper" class="uif-sectionHeader" data-header_for="ubzye9d">
+<h3 id='ubzye9d_header' class="uif-headerText">
+<span class="uif-headerText-span">
+Notes and Attachments (0)
+</span>
+</h3>
+</header>
+<div id="ubzye9d_disclosureContent" data-role="disclosureContent" data-open="false" class="uif-disclosureContent">
+<table id="u1jdbfbf" class="table table-condensed table-bordered uif-tableCollectionLayout uif-hasAddLine">
+<thead>
+<tr >
+<th scope="col"
+></th>
+<th scope="col"
+>
+<label id="u1e992iq_c1" class="clearfix infoline" > Posted Date/Time Stamp </label></th>
+<th scope="col"
+>
+<label id="u1e992iq_c2" class="clearfix infoline" > Principal Name </label></th>
+<th scope="col"
+>
+<label id="u1e992iq_c3" class="clearfix infoline" > Note Text <span class="uif-requiredMessage">*</span> </label></th>
+<th scope="col"
+>
+<label id="u1e992iq_c4" class="clearfix infoline" > Attached File </label></th>
+<th scope="col"
+class="uif-collection-column-action" >
+<label id="u1e992iq_c5" class="clearfix infoline" > Actions </label></th>
+</tr>
+</thead>
+<tbody>
+<tr class="uif-collectionAddItem" >
+<td
+>
+<div id="u1v49yu1" class="uif-messageField" >
+<p id="u15ohzce_add" class="uif-message" >
+add </p>
+</div>
+</td>
+<td
+>
+<div id="u101bzgv_add" class="uif-field" >
+<span id="u101bzgv_add_control" tabindex="0">
+</span>
+</div>
+</td>
+<td
+>
+<div id="u101bzhq_add" class="uif-field" >
+<span id="u101bzhq_add_control" tabindex="0">
+</span>
+</div>
+</td>
+<td
+>
+<div id="u1c1yxo2_add" class="uif-inputField" data-parent="ubzye9d" data-role="InputField">
+<textarea id="u1c1yxo2_add_control" name="newCollectionLines['document.notes'].noteText" rows="3" cols="50"
+class="form-control input-sm uif-textAreaControl ignoreValid required validChar-newCollectionLines['document.notes'].noteText0" data-role="Control" data-control_for="u1c1yxo2_add" maxlength="800"></textarea>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u1c1yxo2_add" value="jQuery(document).ready(function(e) {
+runValidationScript(function(){
+jQuery.validator.addMethod(&quot;validChar-newCollectionLines[\'document.notes\'].noteText0&quot;, function(value, element) {
+return this.optional(element) || /^[\u0000-\uFFFF]*$/.test(value);}, &quot;Must not contain any whitespace (spaces, returns, etc)&quot;);});});" /></td>
+<td
+>
+<div id="u1tsme45_add" class="uif-verticalFieldGroup" data-parent="ubzye9d" data-group="upt1sj6_add">
+<fieldset aria-labelledby="u1tsme45_add_label" id="u1tsme45_add_fieldset">
+<legend style="display: none"></legend>
+<div id="upt1sj6_add" class="uif-verticalBoxGroup" data-parent="u1tsme45_add">
+<div id="u5b5sz6_add" class="uif-inputField uif-boxLayoutVerticalItem pull-left clearfix" data-parent="upt1sj6_add" data-role="InputField">
+<input id='u5b5sz6_add_control' type="file" name="attachmentFile" class="form-control input-sm uif-fileControl ignoreValid" data-role="Control" data-control_for="u5b5sz6_add" >
+</div>
+<button id="u1wv3pqc_add" class="btn btn-default btn-xs uif-action uif-boxLayoutVerticalItem pull-left clearfix" title="Cancel Attachment" data-fieldsToSend="null" data-ajaxReturnType="update-component" data-refreshId="ubzye9d" data-role="Action" data-submit_data="{&quot;methodToCall&quot;:&quot;cancelAttachment&quot;,&quot;actionParameters[lineIndex]&quot;:&quot;-1&quot;,&quot;actionParameters[selectedCollectionPath]&quot;:&quot;document.notes&quot;,&quot;actionParameters[selectedCollectionId]&quot;:&quot;ubzye9d&quot;,&quot;actionParameters[selectedLineIndex]&quot;:&quot;-1&quot;}">
+Cancel
+</button>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="upt1sj6_add" value="var dataComponent = jQuery('#upt1sj6_add');dataComponent.data('validation_messages',{&quot;order&quot;:[&quot;u5b5sz6_add&quot;],&quot;forceShow&quot;:true});" /> </fieldset>
+</div>
+</td>
+<td
+class="uif-collection-column-action" >
+<div id="urcnyt6_add" class="uif-horizontalFieldGroup" data-parent="ubzye9d" data-label="Actions" data-group="u4xw2rb_add">
+<fieldset aria-labelledby="urcnyt6_add_label" id="urcnyt6_add_fieldset">
+<legend style="display: none">Actions</legend>
+<div id="u4xw2rb_add" class="uif-horizontalBoxGroup clearfix" data-parent="urcnyt6_add">
+<button id="u1hxpp0k_add" class="btn btn-default btn-xs uif-action uif-boxLayoutHorizontalItem" title="Add a Note" data-fieldsToSend="null" data-ajaxReturnType="update-component" data-refreshId="ubzye9d" data-role="Action" data-submit_data="{&quot;methodToCall&quot;:&quot;insertNote&quot;,&quot;actionParameters[actionType]&quot;:&quot;addLine&quot;,&quot;actionParameters[selectedCollectionPath]&quot;:&quot;document.notes&quot;,&quot;actionParameters[selectedCollectionId]&quot;:&quot;ubzye9d&quot;}" data-jumpToId="ubzye9d">
+Add
+</button>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="u4xw2rb_add" value="var dataComponent = jQuery('#u4xw2rb_add');dataComponent.data('validation_messages',{&quot;forceShow&quot;:true});" /> </fieldset>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input name="script" type="hidden" data-role="script" value="createDisclosure('ubzye9d', 'ubzye9d_headerWrapper', 'u6jq3ku', false,
+'icon-caret-right', 'icon-caret-down', 500,
+true, false);" />
+</section>
+<input name="script" type="hidden" data-role="dataScript" data-for="ubzye9d" value="var dataComponent = jQuery('#ubzye9d');dataComponent.data('validation_messages',{&quot;isTableCollection&quot;:true});" />
+<section id="u4e3n4e" class="uif-disclosure uif-boxLayoutVerticalItem clearfix" data-parent="ue1o6tx">
+<header id="u4e3n4e_headerWrapper" class="uif-sectionHeader" data-header_for="u4e3n4e">
+<h3 id='u4e3n4e_header' class="uif-headerText">
+<span class="uif-headerText-span">
+Ad Hoc Recipients
+</span>
+</h3>
+</header>
+<div id="u4e3n4e_disclosureContent" data-role="disclosureContent" data-open="false" class="uif-disclosureContent">
+<section id="Uif-AdHocPersonCollection" class="tableborders wrap uif-boxLayoutVerticalItem clearfix" data-add_controls="#u12ecgxq_add_control,#u12ecgyl_add_control" data-parent="u4e3n4e">
+<header id="Uif-AdHocPersonCollection_headerWrapper" class="uif-subSectionHeader" data-header_for="Uif-AdHocPersonCollection">
+<h4 id='Uif-AdHocPersonCollection_header' class="uif-headerText">
+<span class="uif-headerText-span">
+Person Requests:
+</span>
+</h4>
+</header>
+<table id="uef20g2" class="table table-condensed table-bordered uif-tableCollectionLayout uif-hasAddLine">
+<thead>
+<tr >
+<th scope="col"
+>
+<label id="u1k01drf_c1" class="clearfix infoline" > Action Requested <span class="uif-requiredMessage">*</span> </label></th>
+<th scope="col"
+>
+<label id="u1k01drf_c2" class="clearfix infoline" > Person <span class="uif-requiredMessage">*</span> </label></th>
+<th scope="col"
+class="uif-collection-column-action" >
+<label id="u1k01drf_c3" class="clearfix infoline" > Actions </label></th>
+</tr>
+</thead>
+<tbody>
+<tr class="uif-collectionAddItem" >
+<td
+>
+<div id="u12ecgxq_add" class="uif-inputField" data-parent="Uif-AdHocPersonCollection" data-role="InputField">
+<select id="u12ecgxq_add_control" name="newCollectionLines['document.adHocRoutePersons'].actionRequested" size="1"
+class="form-control input-sm uif-dropdownControl ignoreValid required validChar-newCollectionLines['document.adHocRoutePersons'].actionRequested0" data-role="Control" data-control_for="u12ecgxq_add" >
+<option value=""
+></option>
+<option value="F"
+>FYI</option>
+<option value="K"
+>ACKNOWLEDGE</option>
+<option value="A"
+selected="selected"
+>APPROVE</option>
+<option value="C"
+>COMPLETE</option>
+</select>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u12ecgxq_add" value="jQuery(document).ready(function(e) {
+runValidationScript(function(){
+jQuery.validator.addMethod(&quot;validChar-newCollectionLines[\'document.adHocRoutePersons\'].actionRequested0&quot;, function(value, element) {
+return this.optional(element) || /^[\u0000-\uFFFF]*$/.test(value);}, &quot;Must not contain any whitespace (spaces, returns, etc)&quot;);});});" /></td>
+<td
+>
+<div id="u12ecgyl_add" class="uif-inputField" data-parent="Uif-AdHocPersonCollection" data-role="InputField">
+<div class="input-group">
+<input id='u12ecgyl_add_control' type="text" name="newCollectionLines['document.adHocRoutePersons'].id" value="" class="form-control input-sm uif-kimPersonControl ignoreValid required validChar-newCollectionLines['document.adHocRoutePersons'].id0" data-role="Control" data-control_for="u12ecgyl_add" size="10" maxlength="30" >
+<input name="script" type="hidden" data-role="script" data-for="u12ecgyl_add_control" value="jQuery('#u12ecgyl_add_control').on('blur', function(e) {executeFieldQuery('u12ecgyl_add_control','u12ecgyl_add',{},{&quot;newCollectionLines['document.adHocRoutePersons'].id&quot;:&quot;newCollectionLines['document.adHocRoutePersons'].id&quot;},{&quot;newCollectionLines['document.adHocRoutePersons'].person.principalId&quot;:&quot;principalId&quot;,&quot;newCollectionLines['document.adHocRoutePersons'].person.name&quot;:&quot;name&quot;});}); jQuery('#u12ecgyl_add_control').on('change', function(e) {setValue('newCollectionLines[\'document.adHocRoutePersons\'].person.principalId','');}); " />
+<div class="input-group-btn">
+<button id="u12ecgyl_add_quickfinder_add_act" class="btn btn-default uif-action icon-search" data-fieldsToSend="null" data-onClick="showLookupDialog(&quot;u12ecgyl_add_quickfinder_add_act&quot;,false,&quot;Uif-DialogGroup-Lookup&quot;);" data-role="Action" data-focusId="NEXT_INPUT:u12ecgyl_add_quickfinder_add_act" data-submit_data="{&quot;actionParameters[conversionFields]&quot;:&quot;principalName:newCollectionLines[&#39;document.adHocRoutePersons&#39;].id,principalId:newCollectionLines[&#39;document.adHocRoutePersons&#39;].person.principalId,name:newCollectionLines[&#39;document.adHocRoutePersons&#39;].person.name&quot;,&quot;methodToCall&quot;:&quot;performLookup&quot;,&quot;actionParameters[quickfinderId]&quot;:&quot;u12ecgyl_add_quickfinder_add&quot;,&quot;actionParameters[multipleValuesSelect]&quot;:&quot;false&quot;,&quot;actionParameters[dataObjectClassName]&quot;:&quot;org.kuali.rice.kim.impl.identity.PersonImpl&quot;,&quot;actionParameters[baseLookupUrl]&quot;:&quot;http://localhost:8080/krad-dev/kr-krad/lookup&quot;}">
+</button>
+</div>
+</div>
+<span id="u12ecgyl_add_info_message"></span>
+<span id="u12ecgyl_add_info_newCollectionLines-lbrak--quot-document_adHocRoutePersons-quot--rbrak-_person_name" class="uif-informationalMessage">
+</span>
+<input id='u12ecgyl_add_h0' type="hidden" name="newCollectionLines['document.adHocRoutePersons'].person.principalId" value="" >
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u12ecgyl_add" value="jQuery(document).ready(function(e) {
+runValidationScript(function(){
+jQuery.validator.addMethod(&quot;validChar-newCollectionLines[\'document.adHocRoutePersons\'].id0&quot;, function(value, element) {
+return this.optional(element) || /^[\u0000-\uFFFF]*$/.test(value);}, &quot;Must not contain any whitespace (spaces, returns, etc)&quot;);});});" /></td>
+<td
+class="uif-collection-column-action" >
+<div id="ux3ga1v_add" class="uif-horizontalFieldGroup" data-parent="Uif-AdHocPersonCollection" data-label="Actions" data-group="uzzj40w_add">
+<fieldset aria-labelledby="ux3ga1v_add_label" id="ux3ga1v_add_fieldset">
+<legend style="display: none">Actions</legend>
+<div id="uzzj40w_add" class="uif-horizontalBoxGroup clearfix" data-parent="ux3ga1v_add">
+<button id="Uif-AdHocPersonCollection_add" class="btn btn-default btn-xs uif-action uif-boxLayoutHorizontalItem" data-fieldsToSend="null" data-preSubmitCall="var valid=validateAddLine(&#39;Uif-AdHocPersonCollection&#39;);return valid;" data-dismissdialogoption="REQUEST" data-dirtyOnAction="true" data-ajaxReturnType="update-component" data-refreshId="Uif-AdHocPersonCollection" data-default_enter_key_action="true" data-role="Action" data-loadingMessage="Adding Line..." data-focusId="u12ecgxq_add_control" data-submit_data="{&quot;methodToCall&quot;:&quot;addLine&quot;,&quot;actionParameters[actionType]&quot;:&quot;addLine&quot;,&quot;actionParameters[selectedCollectionPath]&quot;:&quot;document.adHocRoutePersons&quot;,&quot;actionParameters[actionEvent]&quot;:&quot;addLine&quot;,&quot;actionParameters[selectedCollectionId]&quot;:&quot;Uif-AdHocPersonCollection&quot;}" data-jumpToId="Uif-AdHocPersonCollection">
+Add
+</button>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="uzzj40w_add" value="var dataComponent = jQuery('#uzzj40w_add');dataComponent.data('validation_messages',{&quot;forceShow&quot;:true});" /> </fieldset>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<input name="script" type="hidden" data-role="dataScript" data-for="Uif-AdHocPersonCollection" value="var dataComponent = jQuery('#Uif-AdHocPersonCollection');dataComponent.data('validation_messages',{&quot;isTableCollection&quot;:true});" />
+<section id="CollectionGroup_AdHocWorkgroup" class="tableborders uif-boxLayoutVerticalItem clearfix" data-add_controls="#u8ohke7_add_control,#u8ohkf2_add_control,#u8ohkfx_add_control" data-parent="u4e3n4e">
+<header id="CollectionGroup_AdHocWorkgroup_headerWrapper" class="uif-subSectionHeader" data-header_for="CollectionGroup_AdHocWorkgroup">
+<h4 id='CollectionGroup_AdHocWorkgroup_header' class="uif-headerText">
+<span class="uif-headerText-span">
+Ad Hoc Group Requests:
+</span>
+</h4>
+</header>
+<table id="u5z3hr5" class="table table-condensed table-bordered uif-tableCollectionLayout uif-hasAddLine">
+<thead>
+<tr >
+<th scope="col"
+>
+<label id="u1pgdeng_c1" class="clearfix infoline" > Action Requested <span class="uif-requiredMessage">*</span> </label></th>
+<th scope="col"
+>
+<label id="u1pgdeng_c2" class="clearfix infoline" > Namespace Code </label></th>
+<th scope="col"
+>
+<label id="u1pgdeng_c3" class="clearfix infoline" > Name </label></th>
+<th scope="col"
+class="uif-collection-column-action" >
+<label id="u1pgdeng_c4" class="clearfix infoline" > Actions </label></th>
+</tr>
+</thead>
+<tbody>
+<tr class="uif-collectionAddItem" >
+<td
+>
+<div id="u8ohke7_add" class="uif-inputField" data-parent="CollectionGroup_AdHocWorkgroup" data-role="InputField">
+<select id="u8ohke7_add_control" name="newCollectionLines['document.adHocRouteWorkgroups'].actionRequested" size="1"
+class="form-control input-sm uif-dropdownControl ignoreValid required validChar-newCollectionLines['document.adHocRouteWorkgroups'].actionRequested0" data-role="Control" data-control_for="u8ohke7_add" >
+<option value=""
+></option>
+<option value="F"
+>FYI</option>
+<option value="K"
+>ACKNOWLEDGE</option>
+<option value="A"
+selected="selected"
+>APPROVE</option>
+<option value="C"
+>COMPLETE</option>
+</select>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u8ohke7_add" value="jQuery(document).ready(function(e) {
+runValidationScript(function(){
+jQuery.validator.addMethod(&quot;validChar-newCollectionLines[\'document.adHocRouteWorkgroups\'].actionRequested0&quot;, function(value, element) {
+return this.optional(element) || /^[\u0000-\uFFFF]*$/.test(value);}, &quot;Must not contain any whitespace (spaces, returns, etc)&quot;);});});" /></td>
+<td
+>
+<div id="u8ohkf2_add" class="uif-inputField" data-parent="CollectionGroup_AdHocWorkgroup" data-role="InputField">
+<input id='u8ohkf2_add_control' type="text" name="newCollectionLines['document.adHocRouteWorkgroups'].recipientNamespaceCode" value="" class="form-control input-sm uif-textControl ignoreValid validChar-newCollectionLines['document.adHocRouteWorkgroups'].recipientNamespaceCode0" data-role="Control" data-control_for="u8ohkf2_add" size="12" maxlength="40" >
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u8ohkf2_add" value="jQuery(document).ready(function(e) {
+runValidationScript(function(){
+jQuery.validator.addMethod(&quot;validChar-newCollectionLines[\'document.adHocRouteWorkgroups\'].recipientNamespaceCode0&quot;, function(value, element) {
+return this.optional(element) || /^[\u0000-\uFFFF]*$/.test(value);}, &quot;Must not contain any whitespace (spaces, returns, etc)&quot;);});});" /></td>
+<td
+>
+<div id="u8ohkfx_add" class="uif-inputField" data-parent="CollectionGroup_AdHocWorkgroup" data-role="InputField">
+<div class="input-group">
+<input id='u8ohkfx_add_control' type="text" name="newCollectionLines['document.adHocRouteWorkgroups'].recipientName" value="" class="form-control input-sm uif-kimGroupControl ignoreValid validChar-newCollectionLines['document.adHocRouteWorkgroups'].recipientName0" data-role="Control" data-control_for="u8ohkfx_add" size="10" maxlength="80" >
+<div class="input-group-btn">
+<button id="u8ohkfx_add_quickfinder_add_act" class="btn btn-default uif-action icon-search" data-fieldsToSend="null" data-onClick="showLookupDialog(&quot;u8ohkfx_add_quickfinder_add_act&quot;,false,&quot;Uif-DialogGroup-Lookup&quot;);" data-role="Action" data-focusId="NEXT_INPUT:u8ohkfx_add_quickfinder_add_act" data-submit_data="{&quot;actionParameters[conversionFields]&quot;:&quot;id:newCollectionLines[&#39;document.adHocRouteWorkgroups&#39;].id,name:newCollectionLines[&#39;document.adHocRouteWorkgroups&#39;].recipientName,namespaceCode:newCollectionLines[&#39;document.adHocRouteWorkgroups&#39;].recipientNamespaceCode&quot;,&quot;methodToCall&quot;:&quot;performLookup&quot;,&quot;actionParameters[quickfinderId]&quot;:&quot;u8ohkfx_add_quickfinder_add&quot;,&quot;actionParameters[lookupParameters]&quot;:&quot;newCollectionLines[&#39;document.adHocRouteWorkgroups&#39;].recipientNamespaceCode:namespaceCode&quot;,&quot;actionParameters[multipleValuesSelect]&quot;:&quot;false&quot;,&quot;actionParameters[dataObjectClassName]&quot;:&quot;org.kuali.rice.kim.impl.group.GroupBo&quot;,&quot;actionParameters[baseLookupUrl]&quot;:&quot;http://localhost:8080/krad-dev/kr-krad/lookup&quot;}">
+</button>
+</div>
+</div>
+<input id='u8ohkfx_add_h0' type="hidden" name="newCollectionLines['document.adHocRouteWorkgroups'].id" value="" >
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u8ohkfx_add" value="jQuery(document).ready(function(e) {
+runValidationScript(function(){
+jQuery.validator.addMethod(&quot;validChar-newCollectionLines[\'document.adHocRouteWorkgroups\'].recipientName0&quot;, function(value, element) {
+return this.optional(element) || /^[\u0000-\uFFFF]*$/.test(value);}, &quot;Must not contain any whitespace (spaces, returns, etc)&quot;);});});" /></td>
+<td
+class="uif-collection-column-action" >
+<div id="u12jsaxw_add" class="uif-horizontalFieldGroup" data-parent="CollectionGroup_AdHocWorkgroup" data-label="Actions" data-group="uskdzhd_add">
+<fieldset aria-labelledby="u12jsaxw_add_label" id="u12jsaxw_add_fieldset">
+<legend style="display: none">Actions</legend>
+<div id="uskdzhd_add" class="uif-horizontalBoxGroup clearfix" data-parent="u12jsaxw_add">
+<button id="CollectionGroup_AdHocWorkgroup_add" class="btn btn-default btn-xs uif-action uif-boxLayoutHorizontalItem" data-fieldsToSend="null" data-preSubmitCall="var valid=validateAddLine(&#39;CollectionGroup_AdHocWorkgroup&#39;);return valid;" data-dismissdialogoption="REQUEST" data-dirtyOnAction="true" data-ajaxReturnType="update-component" data-refreshId="CollectionGroup_AdHocWorkgroup" data-default_enter_key_action="true" data-role="Action" data-loadingMessage="Adding Line..." data-focusId="u8ohke7_add_control" data-submit_data="{&quot;methodToCall&quot;:&quot;addLine&quot;,&quot;actionParameters[actionType]&quot;:&quot;addLine&quot;,&quot;actionParameters[selectedCollectionPath]&quot;:&quot;document.adHocRouteWorkgroups&quot;,&quot;actionParameters[actionEvent]&quot;:&quot;addLine&quot;,&quot;actionParameters[selectedCollectionId]&quot;:&quot;CollectionGroup_AdHocWorkgroup&quot;}" data-jumpToId="CollectionGroup_AdHocWorkgroup">
+Add
+</button>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="uskdzhd_add" value="var dataComponent = jQuery('#uskdzhd_add');dataComponent.data('validation_messages',{&quot;forceShow&quot;:true});" /> </fieldset>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<input name="script" type="hidden" data-role="dataScript" data-for="CollectionGroup_AdHocWorkgroup" value="var dataComponent = jQuery('#CollectionGroup_AdHocWorkgroup');dataComponent.data('validation_messages',{&quot;isTableCollection&quot;:true});" />
+</div>
+<input name="script" type="hidden" data-role="script" value="createDisclosure('u4e3n4e', 'u4e3n4e_headerWrapper', 'u1p1gdb', false,
+'icon-caret-right', 'icon-caret-down', 500,
+true, false);" />
+</section>
+<input name="script" type="hidden" data-role="dataScript" data-for="u4e3n4e" value="var dataComponent = jQuery('#u4e3n4e');dataComponent.data('validation_messages',{&quot;sections&quot;:[&quot;Uif-AdHocPersonCollection&quot;,&quot;CollectionGroup_AdHocWorkgroup&quot;],&quot;order&quot;:[&quot;s$Uif-AdHocPersonCollection&quot;,&quot;s$CollectionGroup_AdHocWorkgroup&quot;]});" />
+<section id="u4e3n59" class="uif-disclosure uif-boxLayoutVerticalItem clearfix" data-parent="ue1o6tx">
+<header id="u4e3n59_headerWrapper" class="uif-sectionHeader" data-header_for="u4e3n59">
+<h3 id='u4e3n59_header' class="uif-headerText">
+<span class="uif-headerText-span">
+Route Log
+</span>
+</h3>
+</header>
+<div id="u4e3n59_disclosureContent" data-role="disclosureContent" data-open="false" class="uif-disclosureContent">
+<iframe id="routeLogIFrame"
+src="http://localhost:8080/krad-dev/kew/RouteLog.do?documentId=3940" class="uif-iFrame uif-boxLayoutVerticalItem pull-left clearfix" style="width: 95%;" width="95%" height="500" frameborder="0" >
+</iframe>
+<input name="script" type="hidden" data-role="script" data-for="routeLogIFrame" value="jQuery('#routeLogIFrame').on('load', function(e) {setRouteLogIframeDimensions();}); " />
+</div>
+<input name="script" type="hidden" data-role="script" value="createDisclosure('u4e3n59', 'u4e3n59_headerWrapper', 'u1vvgv4w', false,
+'icon-caret-right', 'icon-caret-down', 500,
+true, false);" />
+</section>
+<!-- PAGE RELATED VARS -->
+<input id='pageId' type="hidden" name="pageId" value="ue1o6tx" >
+<div id="u1jjdeg3" class="uif-footer clearfix" data-parent="ue1o6tx">
+<button id="ucancel" class="btn btn-default uif-action uif-boxLayoutHorizontalItem" data-fieldsToSend="null" data-confirmDialogId="ConfirmCancelDialog" data-performDirtyValidation="true" data-role="Action" data-submit_data="{&quot;methodToCall&quot;:&quot;cancel&quot;}">
+Cancel
+</button>
+<section id="ConfirmCancelDialog" class="modal fade uif-cssGridGroup" style="display: none;" role="dialog" aria-hidden="true" >
+<div class="modal-dialog modal-sm">
+<div class="modal-content">
+<header id="ConfirmCancelDialog_headerWrapper" class="modal-header uif-header" data-role="dialogheader" data-header_for="ConfirmCancelDialog">
+<button id="u6pgu8f" class="close uif-action" aria-hidden="true" data-fieldsToSend="null" data-role="Action" data-onClick="return false;" data-dismiss="modal">
+&times;
+</button>
+<h4 id='ConfirmCancelDialog_header' class="modal-title">
+<span class="uif-headerText-span">
+Please Confirm to Continue
+</span>
+</h4>
+</header>
+<div class="modal-body">
+<div class="col-md-12">
+<div id="u9jrfqp" class="uif-dialogPrompt" >
+<p id="u1bhov5m" class="uif-message" data-role="prompttext">
+Are you sure you want to cancel? </p>
+</div>
+</div>
+</div>
+<div id="uxvr5n3" class="modal-footer" data-parent="ConfirmCancelDialog">
+<button id="u1t61q08" class="btn btn-default uif-action" data-fieldsToSend="null" data-response="false" data-dismissdialogoption="IMMEDIATE" data-role="Action">
+Cancel
+</button>
+<button id="u1t61q13" class="btn btn-primary uif-action" data-fieldsToSend="null" data-response="true" data-dismissdialogoption="PRESUBMIT" data-role="Action" data-validate="true">
+OK
+</button>
+</div>
+</div>
+</div>
+</section>
+<button id="u8f37ym" class="btn btn-default uif-action uif-boxLayoutHorizontalItem" data-fieldsToSend="null" data-confirmDialogId="ConfirmBlanketApproveDialog" data-role="Action" data-validate="true" data-submit_data="{&quot;methodToCall&quot;:&quot;blanketApprove&quot;}">
+Blanket Approve
+</button>
+<section id="ConfirmBlanketApproveDialog" class="modal fade uif-cssGridGroup" style="display: none;" role="dialog" aria-hidden="true" >
+<div class="modal-dialog modal-sm">
+<div class="modal-content">
+<header id="ConfirmBlanketApproveDialog_headerWrapper" class="modal-header uif-header" data-role="dialogheader" data-header_for="ConfirmBlanketApproveDialog">
+<button id="uvvxpah" class="close uif-action" aria-hidden="true" data-fieldsToSend="null" data-role="Action" data-onClick="return false;" data-dismiss="modal">
+&times;
+</button>
+<h4 id='ConfirmBlanketApproveDialog_header' class="modal-title">
+<span class="uif-headerText-span">
+Please Confirm to Continue
+</span>
+</h4>
+</header>
+<div class="modal-body">
+<div class="col-md-12">
+<div id="uao6p7v" class="uif-dialogPrompt" >
+<p id="u1vg8oz8" class="uif-message" data-role="prompttext">
+Are you sure you want to blanket approve this and make the document final? </p>
+</div>
+</div>
+</div>
+<div id="u8lrts9" class="modal-footer" data-parent="ConfirmBlanketApproveDialog">
+<button id="uquxtda" class="btn btn-default uif-action" data-fieldsToSend="null" data-response="false" data-dismissdialogoption="IMMEDIATE" data-role="Action">
+Cancel
+</button>
+<button id="uquxte5" class="btn btn-primary uif-action" data-fieldsToSend="null" data-response="true" data-dismissdialogoption="PRESUBMIT" data-role="Action" data-validate="true">
+OK
+</button>
+</div>
+</div>
+</div>
+</section>
+<button id="usave" class="btn btn-default uif-action uif-boxLayoutHorizontalItem" data-fieldsToSend="null" data-clearDirtyOnAction="true" data-role="Action" data-loadingMessage="Saving..." data-focusId="FIRST" data-validate="true" data-submit_data="{&quot;methodToCall&quot;:&quot;save&quot;}">
+Save
+</button>
+<button id="uye9g9m" class="btn btn-primary uif-action uif-boxLayoutHorizontalItem" data-fieldsToSend="null" data-preSubmitCall="return isRouteToComplete(kradRequest);" data-confirmDialogId="ConfirmSubmitDialog" data-default_enter_key_action="true" data-role="Action" data-submit_data="{&quot;methodToCall&quot;:&quot;route&quot;}">
+Submit
+</button>
+<section id="ConfirmSubmitDialog" class="modal fade uif-cssGridGroup" style="top:70%; display: none;" role="dialog" aria-hidden="true" >
+<div class="modal-dialog modal-sm">
+<div class="modal-content">
+<header id="ConfirmSubmitDialog_headerWrapper" class="modal-header uif-header" data-role="dialogheader" data-header_for="ConfirmSubmitDialog">
+<button id="uqa7f85" class="close uif-action" aria-hidden="true" data-fieldsToSend="null" data-role="Action" data-onClick="return false;" data-dismiss="modal">
+&times;
+</button>
+<h4 id='ConfirmSubmitDialog_header' class="modal-title">
+<span class="uif-headerText-span">
+Please Confirm to Continue
+</span>
+</h4>
+</header>
+<div class="modal-body">
+<div class="col-md-12">
+<div id="u1hzqmi9" class="uif-dialogPrompt" >
+<p id="u1jqx4u2" class="uif-message" data-role="prompttext">
+Are you sure you want to submit this document and send it into routing? </p>
+</div>
+</div>
+</div>
+<div id="uoydct1" class="modal-footer" data-parent="ConfirmSubmitDialog">
+<button id="u17nv6qq" class="btn btn-default uif-action" data-fieldsToSend="null" data-response="false" data-dismissdialogoption="IMMEDIATE" data-role="Action">
+Cancel
+</button>
+<button id="u17nv6rl" class="btn btn-primary uif-action" data-fieldsToSend="null" data-response="true" data-dismissdialogoption="PRESUBMIT" data-role="Action">
+OK
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<input name="script" type="hidden" data-role="dataScript" data-for="ue1o6tx" value="var dataComponent = jQuery('#ue1o6tx');dataComponent.data('validation_messages',{&quot;displayHeaderSummary&quot;:false,&quot;sections&quot;:[&quot;u4e3n2o&quot;,&quot;u1ssprty&quot;,&quot;u1dgh1j&quot;,&quot;ubzye9d&quot;,&quot;u4e3n4e&quot;,&quot;u4e3n59&quot;,&quot;u4e3n64&quot;],&quot;order&quot;:[&quot;s$u4e3n2o&quot;,&quot;s$u1ssprty&quot;,&quot;s$u1dgh1j&quot;,&quot;s$ubzye9d&quot;,&quot;s$u4e3n4e&quot;,&quot;s$u4e3n59&quot;,&quot;s$u4e3n64&quot;],&quot;pageLevel&quot;:true,&quot;forceShow&quot;:true});" /><input name="script" type="hidden" data-role="script" data-for="ue1o6tx" value="jQuery(document).ready(function(e) {
+setupPage(true);});" /> </div>
+<!-- VIEW FOOTER -->
+<!-- DIALOGS/Placeholders -->
+<div id="Uif-Dialogs">
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="TravelAccount-MaintenanceView" value="var dataComponent = jQuery('#TravelAccount-MaintenanceView');dataComponent.data('req_indicator',&quot;*&quot;);dataComponent.data('action_defaults',{&quot;focusOnIdAfterSubmit&quot;:&quot;SELF&quot;,&quot;loadingMessage&quot;:&quot;Loading...&quot;,&quot;clearDirtyOnAction&quot;:false,&quot;dirtyOnAction&quot;:false,&quot;validate&quot;:false,&quot;performDirtyValidation&quot;:false,&quot;ajaxSubmit&quot;:true,&quot;disableBlocking&quot;:false,&quot;onClick&quot;:&quot;actionInvokeHandler(this);&quot;,&quot;submit_data&quot;:{},&quot;focusId&quot;:&quot;SELF&quot;,&quot;fieldsToSend&quot;:[]});dataComponent.data('field_validation_defaults',{&quot;displayMessages&quot;:true,&quot;useTooltip&quot;:true,&quot;messagingEnabled&quot;:true,&quot;hasOwnMessages&quot;:false,&quot;showIcons&quot;:false,&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;info&quot;:[],&quot;serverErrors&quot;:[],&quot;serverWarnings&quot;:[],&quot;serverInfo&quot;:[]});dataComponent.data('group_validation_defaults',{&quot;summarize&quot;:true,&quot;displayMessages&quot;:true,&quot;closeable&quot;:true,&quot;collapseFieldMessages&quot;:true,&quot;showPageSummaryHeader&quot;:true,&quot;displayLabel&quot;:true,&quot;displayHeaderSummary&quot;:true,&quot;hasOwnMessages&quot;:false,&quot;pageLevel&quot;:false,&quot;forceShow&quot;:false,&quot;isTableCollection&quot;:false,&quot;order&quot;:[],&quot;sections&quot;:[],&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;info&quot;:[],&quot;serverErrors&quot;:[],&quot;serverWarnings&quot;:[],&quot;serverInfo&quot;:[]});" /><input name="script" type="hidden" data-role="script" data-for="TravelAccount-MaintenanceView" value="jQuery(document).ready(function(e) {jQuery.extend(jQuery.validator.messages, {
+required: 'Required',
+minExclusive: 'Value must be greater than {0}',
+maxInclusive: 'Value cannot be greater than {0}',
+minLengthConditional: 'Must be at least {0} characters',
+maxLengthConditional: 'Must be at most {0} characters'});});" />
+<span id="formInfo">
+<input type="hidden" name="viewId" value="TravelAccount-MaintenanceView" >
+<input type="hidden" name="formKey" value="5a7b77c6-ca2f-48f7-b1c5-64a7513a92e8" >
+<input type="hidden" name="requestedFormKey" value="" >
+<input type="hidden" name="sessionId" value="CC4B81CE39B998D6B89FB8C9E7694FF3" >
+<input type="hidden" name="flowKey" value="" >
+<input type="hidden" name="view.applyDirtyCheck" value="true" >
+<input type="hidden" name="dirtyForm" value="false" >
+<input type="hidden" name="renderedInDialog" value="false" >
+<input type="hidden" name="view.singlePageView" value="true" >
+<input type="hidden" name="view.disableBrowserCache" value="true" >
+</span>
+<span id="formComplete"></span>
+</form>
+<!-- APPLICATION FOOTER -->
+<footer id="Uif-ApplicationFooter-Wrapper" >
+<div class="demo-thirdTier clearfix">
+<div class="demo-headerFooterContainer">
+<div>
+<div class="demo-kradDescription">
+<h2>About KRAD</h2>
+<div class="demo-blurb">Kuali Rapid Application Development (KRAD) is a framework that eases the
+development of enterprise web applications by providing reusable solutions and tooling that enables
+developers to build in a rapid and agile fashion. KRAD is a complete framework for web developers
+that provides infrastructure in all the major areas of an application (client, business, and data),
+and integrates with other modules of the Rice middleware project. In future releases, KNS will be
+absorbed into and replaced by KRAD.
+</div>
+</div>
+<div class="demo-contactInfo">
+<h2>Collaborate</h2>
+<div>
+<ul>
+<li>
+<a target="_self"
+href="https://groups.google.com/a/kuali.org/forum/?fromgroups#!forum/rice.usergroup.krad"
+id="KradSampleAppHome-UserGroupLink">KRAD User Group</a>
+</li>
+<li>
+<a target="_self" href="https://groups.google.com/a/kuali.org/groups/dir"
+id="KradSampleAppHome-KualiGroupsLink">Kuali Discussion Groups</a>
+</li>
+<li>
+<a target="_self" href="https://twitter.com/kuali" id="KradSampleAppHome-TweetLink">Follow
+our tweets</a>
+</li>
+<li>
+<a target="_self" href="http://jira.kuali.org/" id="KradSampleAppHome-BugLink">Report a
+bug</a>
+</li>
+<li>
+<a target="_self" href="http://www.kuali.org/join/how" id="KradSampleAppHome-CollabLink">Join Kuali</a>
+</li>
+</ul>
+</div>
+</div>
+<a class="twitter-timeline" width="240" data-tweet-limit="2" data-chrome="nofooter noscrollbar transparent noheader" data-theme="dark" href="https://twitter.com/kuali" data-widget-id="359754571758837761">Tweets by @kuali</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+</div>
+</div>
+<div id="Uif-BuildFooter" class="uif-group clearfix" data-parent="TravelAccount-MaintenanceView">
+<img id="utxlu76" src="../krad/images/logo-kuali.png" alt="Kuali Logo"
+class="uif-image uif-boxLayoutHorizontalItem" />
+<p id="u7pwch9" class="uif-message uif-boxLayoutHorizontalItem" >
+Application ID: TRAVEL </p>
+<p id="u7pwci4" class="uif-message uif-boxLayoutHorizontalItem" >
+Application Version: 2.5.0-M7-SNAPSHOT </p>
+<p id="u7pwciz" class="uif-message uif-boxLayoutHorizontalItem" >
+</p>
+<p id="u7pwcju" class="uif-message uif-boxLayoutHorizontalItem" >
+Environment: dev </p>
+<p id="u7pwckp" class="uif-message uif-boxLayoutHorizontalItem" >
+(Oracle9i) </p>
+<a id="u19u5a71" href="http://www.kuali.org" target="_self"
+class="uif-link uif-boxLayoutHorizontalItem" >Send Feedback</a>
+</div>
+</footer>
+<script type="text/javascript"
+src="../themes/kboot/scripts/kboot.2.5.0-M7-SNAPSHOT.min.js"></script>
+<script type="text/javascript"
+src="http://localhost:8080/krad-dev/scripts/krad.document.js"></script>
+<script type="text/javascript">
+setGrowlDefaults({position:"top-right",sticky:false,life:7000});setBlockUIDefaults({fadeIn:400,fadeOut:800,centerX:true,centerY:true,blockingImage:"http://localhost:8080/krad-dev/krad/images/loading.gif"}, 'navigation');setBlockUIDefaults({fadeIn:400,fadeOut:800,centerX:true,centerY:true,blockingImage:"http://localhost:8080/krad-dev/krad/images/loader.gif"}, 'refresh');setConfigParam("kradImageLocation","http://localhost:8080/krad-dev/krad/images/");setConfigParam("kradUrl","http://localhost:8080/krad-dev/kr-krad");setConfigParam("applicationUrl","http://localhost:8080/krad-dev");setConfigParam("scriptCleanup","true");
+</script>
+</body>
+</html>
